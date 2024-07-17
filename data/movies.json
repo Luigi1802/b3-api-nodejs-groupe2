@@ -1,0 +1,4434 @@
+[{
+  "_id": {
+    "$oid": "669825cf747acdcf345aacfb"
+  },
+  "title": "Indiana Jones and the Last Crusade",
+  "year": 1989,
+  "duration": 127,
+  "rating": 4.4,
+  "producers": [
+    {
+      "name": "George",
+      "surname": "Lucas"
+    },
+    {
+      "name": "Robert",
+      "surname": "Watts"
+    }
+  ],
+  "directors": [
+    {
+      "name": "Steven",
+      "surname": "Spielberg"
+    }
+  ],
+  "actors": [
+    {
+      "name": "Harrison",
+      "surname": "Ford"
+    },
+    {
+      "name": "Sean",
+      "surname": "Connery"
+    },
+    {
+      "name": "Denholm",
+      "surname": "Elliott"
+    }
+  ],
+  "genres": [
+    "Action",
+    "Adventure"
+  ]
+},
+{
+  "_id": {
+    "$oid": "669825cf747acdcf345aacfc"
+  },
+  "title": "Spider-Man: Into the Spider-Verse",
+  "year": 2018,
+  "duration": 117,
+  "rating": 4.4,
+  "producers": [
+    {
+      "name": "Phil",
+      "surname": "Lord"
+    },
+    {
+      "name": "Christopher",
+      "surname": "Miller"
+    }
+  ],
+  "directors": [
+    {
+      "name": "Bob",
+      "surname": "Persichetti"
+    },
+    {
+      "name": "Peter",
+      "surname": "Ramsey"
+    },
+    {
+      "name": "Rodney",
+      "surname": "Rothman"
+    }
+  ],
+  "actors": [
+    {
+      "name": "Shameik",
+      "surname": "Moore"
+    },
+    {
+      "name": "Jake",
+      "surname": "Johnson"
+    },
+    {
+      "name": "Hailee",
+      "surname": "Steinfeld"
+    }
+  ],
+  "genres": [
+    "Action",
+    "Animation",
+    "Family"
+  ]
+},
+{
+  "_id": {
+    "$oid": "669825cf747acdcf345aacfd"
+  },
+  "title": "The Matrix",
+  "year": 1999,
+  "duration": 136,
+  "rating": 4.4,
+  "producers": [
+    {
+      "name": "Joel",
+      "surname": "Silver"
+    }
+  ],
+  "directors": [
+    {
+      "name": "Lana",
+      "surname": "Wachowski"
+    },
+    {
+      "name": "Lilly",
+      "surname": "Wachowski"
+    }
+  ],
+  "actors": [
+    {
+      "name": "Keanu",
+      "surname": "Reeves"
+    },
+    {
+      "name": "Laurence",
+      "surname": "Fishburne"
+    },
+    {
+      "name": "Carrie-Anne",
+      "surname": "Moss"
+    }
+  ],
+  "genres": [
+    "Action",
+    "Science Fiction"
+  ]
+},
+{
+  "_id": {
+    "$oid": "669825cf747acdcf345aad00"
+  },
+  "title": "Léon",
+  "year": 1994,
+  "duration": 110,
+  "rating": 4.3,
+  "producers": [
+    {
+      "name": "Patrice",
+      "surname": "Ledoux"
+    }
+  ],
+  "directors": [
+    {
+      "name": "Luc",
+      "surname": "Besson"
+    }
+  ],
+  "actors": [
+    {
+      "name": "Jean",
+      "surname": "Reno"
+    },
+    {
+      "name": "Gary",
+      "surname": "Oldman"
+    },
+    {
+      "name": "Natalie",
+      "surname": "Portman"
+    }
+  ],
+  "genres": [
+    "Action",
+    "Crime",
+    "Drama"
+  ]
+},
+{
+  "_id": {
+    "$oid": "669825cf747acdcf345aad01"
+  },
+  "title": "Twelve Angry Men",
+  "year": 1957,
+  "duration": 95,
+  "rating": 4.6,
+  "producers": [
+    {
+      "name": "Henry",
+      "surname": "Fonda"
+    },
+    {
+      "name": "Reginald",
+      "surname": "Rose"
+    }
+  ],
+  "directors": [
+    {
+      "name": "Sidney",
+      "surname": "Lumet"
+    }
+  ],
+  "actors": [
+    {
+      "name": "Henry",
+      "surname": "Fonda"
+    },
+    {
+      "name": "Martin",
+      "surname": "Balsam"
+    },
+    {
+      "name": "John",
+      "surname": "Fiedler"
+    }
+  ],
+  "genres": [
+    "Drama",
+    "Judicial"
+  ]
+},
+{
+  "_id": {
+    "$oid": "669825cf747acdcf345aad02"
+  },
+  "title": "The Godfather",
+  "year": 1972,
+  "duration": 175,
+  "rating": 4.5,
+  "producers": [
+    {
+      "name": "Albert",
+      "surname": "S. Ruddy"
+    }
+  ],
+  "directors": [
+    {
+      "name": "Francis Ford",
+      "surname": "Coppola"
+    }
+  ],
+  "actors": [
+    {
+      "name": "Marlon",
+      "surname": "Brando"
+    },
+    {
+      "name": "Al",
+      "surname": "Pacino"
+    },
+    {
+      "name": "James",
+      "surname": "Caan"
+    }
+  ],
+  "genres": [
+    "Crime",
+    "Drama"
+  ]
+},
+{
+  "_id": {
+    "$oid": "669825cf747acdcf345aad03"
+  },
+  "title": "The Shawshank Redemption",
+  "year": 1994,
+  "duration": 142,
+  "rating": 4.5,
+  "producers": [
+    {
+      "name": "Niki",
+      "surname": "Marvin"
+    }
+  ],
+  "directors": [
+    {
+      "name": "Frank",
+      "surname": "Darabont"
+    }
+  ],
+  "actors": [
+    {
+      "name": "Tim",
+      "surname": "Robbins"
+    },
+    {
+      "name": "Morgan",
+      "surname": "Freeman"
+    },
+    {
+      "name": "Bob",
+      "surname": "Gunton"
+    }
+  ],
+  "genres": [
+    "Drama"
+  ]
+},
+{
+  "_id": {
+    "$oid": "669825cf747acdcf345aad04"
+  },
+  "title": "The Lord of the Rings: The Return of the King",
+  "year": 2003,
+  "duration": 201,
+  "rating": 4.5,
+  "producers": [
+    {
+      "name": "Peter",
+      "surname": "Jackson"
+    },
+    {
+      "name": "Fran",
+      "surname": "Walsh"
+    }
+  ],
+  "directors": [
+    {
+      "name": "Peter",
+      "surname": "Jackson"
+    }
+  ],
+  "actors": [
+    {
+      "name": "Elijah",
+      "surname": "Wood"
+    },
+    {
+      "name": "Viggo",
+      "surname": "Mortensen"
+    },
+    {
+      "name": "Ian",
+      "surname": "McKellen"
+    }
+  ],
+  "genres": [
+    "Adventure",
+    "Fantasy"
+  ]
+},
+{
+  "_id": {
+    "$oid": "669825cf747acdcf345aad05"
+  },
+  "title": "One Flew Over the Cuckoo's Nest",
+  "year": 1975,
+  "duration": 133,
+  "rating": 4.5,
+  "producers": [
+    {
+      "name": "Michael",
+      "surname": "Douglas"
+    },
+    {
+      "name": "Saul",
+      "surname": "Zaentz"
+    }
+  ],
+  "directors": [
+    {
+      "name": "Milos",
+      "surname": "Forman"
+    }
+  ],
+  "actors": [
+    {
+      "name": "Jack",
+      "surname": "Nicholson"
+    },
+    {
+      "name": "Louise",
+      "surname": "Fletcher"
+    },
+    {
+      "name": "William",
+      "surname": "Redfield"
+    }
+  ],
+  "genres": [
+    "Drama"
+  ]
+},
+{
+  "_id": {
+    "$oid": "669825cf747acdcf345aad06"
+  },
+  "title": "The Lion King",
+  "year": 1994,
+  "duration": 89,
+  "rating": 4.5,
+  "producers": [
+    {
+      "name": "Don",
+      "surname": "Hahn"
+    }
+  ],
+  "directors": [
+    {
+      "name": "Roger",
+      "surname": "Allers"
+    },
+    {
+      "name": "Rob",
+      "surname": "Minkoff"
+    }
+  ],
+  "actors": [
+    {
+      "name": "Matthew",
+      "surname": "Broderick"
+    },
+    {
+      "name": "James",
+      "surname": "Earl Jones"
+    },
+    {
+      "name": "Jeremy",
+      "surname": "Irons"
+    }
+  ],
+  "genres": [
+    "Animation",
+    "Adventure",
+    "Family"
+  ]
+},
+{
+  "_id": {
+    "$oid": "669825cf747acdcf345aad07"
+  },
+  "title": "Pulp Fiction",
+  "year": 1994,
+  "duration": 154,
+  "rating": 4.5,
+  "producers": [
+    {
+      "name": "Lawrence",
+      "surname": "Bender"
+    }
+  ],
+  "directors": [
+    {
+      "name": "Quentin",
+      "surname": "Tarantino"
+    }
+  ],
+  "actors": [
+    {
+      "name": "John",
+      "surname": "Travolta"
+    },
+    {
+      "name": "Uma",
+      "surname": "Thurman"
+    },
+    {
+      "name": "Samuel L.",
+      "surname": "Jackson"
+    }
+  ],
+  "genres": [
+    "Crime",
+    "Drama"
+  ]
+},
+{
+  "_id": {
+    "$oid": "669825cf747acdcf345aad08"
+  },
+  "title": "Inception",
+  "year": 2010,
+  "duration": 148,
+  "rating": 4.3,
+  "producers": [
+    {
+      "name": "Emma",
+      "surname": "Thomas"
+    },
+    {
+      "name": "Christopher",
+      "surname": "Nolan"
+    }
+  ],
+  "directors": [
+    {
+      "name": "Christopher",
+      "surname": "Nolan"
+    }
+  ],
+  "actors": [
+    {
+      "name": "Leonardo",
+      "surname": "DiCaprio"
+    },
+    {
+      "name": "Joseph",
+      "surname": "Gordon-Levitt"
+    },
+    {
+      "name": "Ellen",
+      "surname": "Page"
+    }
+  ],
+  "genres": [
+    "Action",
+    "Science Fiction"
+  ]
+},
+{
+  "_id": {
+    "$oid": "669825cf747acdcf345aad09"
+  },
+  "title": "The Dark Knight",
+  "year": 2008,
+  "duration": 152,
+  "rating": 4.5,
+  "producers": [
+    {
+      "name": "Emma",
+      "surname": "Thomas"
+    },
+    {
+      "name": "Charles",
+      "surname": "Roven"
+    }
+  ],
+  "directors": [
+    {
+      "name": "Christopher",
+      "surname": "Nolan"
+    }
+  ],
+  "actors": [
+    {
+      "name": "Christian",
+      "surname": "Bale"
+    },
+    {
+      "name": "Heath",
+      "surname": "Ledger"
+    },
+    {
+      "name": "Aaron",
+      "surname": "Eckhart"
+    }
+  ],
+  "genres": [
+    "Action",
+    "Crime",
+    "Drama"
+  ]
+},
+{
+  "_id": {
+    "$oid": "669825cf747acdcf345aad0a"
+  },
+  "title": "Schindler's List",
+  "year": 1993,
+  "duration": 195,
+  "rating": 4.6,
+  "producers": [
+    {
+      "name": "Steven",
+      "surname": "Spielberg"
+    },
+    {
+      "name": "Gerald",
+      "surname": "R. Molen"
+    },
+    {
+      "name": "Branko",
+      "surname": "Lustig"
+    }
+  ],
+  "directors": [
+    {
+      "name": "Steven",
+      "surname": "Spielberg"
+    }
+  ],
+  "actors": [
+    {
+      "name": "Liam",
+      "surname": "Neeson"
+    },
+    {
+      "name": "Ralph",
+      "surname": "Fiennes"
+    },
+    {
+      "name": "Ben",
+      "surname": "Kingsley"
+    }
+  ],
+  "genres": [
+    "Biography",
+    "Drama",
+    "History"
+  ]
+},
+{
+  "_id": {
+    "$oid": "669825cf747acdcf345aad0b"
+  },
+  "title": "Forrest Gump",
+  "year": 1994,
+  "duration": 142,
+  "rating": 4.4,
+  "producers": [
+    {
+      "name": "Wendy",
+      "surname": "Finerman"
+    },
+    {
+      "name": "Steve",
+      "surname": "Starkey"
+    },
+    {
+      "name": "Steve",
+      "surname": "Tisch"
+    }
+  ],
+  "directors": [
+    {
+      "name": "Robert",
+      "surname": "Zemeckis"
+    }
+  ],
+  "actors": [
+    {
+      "name": "Tom",
+      "surname": "Hanks"
+    },
+    {
+      "name": "Robin",
+      "surname": "Wright"
+    },
+    {
+      "name": "Gary",
+      "surname": "Sinise"
+    }
+  ],
+  "genres": [
+    "Drama",
+    "Romance"
+  ]
+},
+{
+  "_id": {
+    "$oid": "669825cf747acdcf345aad0c"
+  },
+  "title": "The Silence of the Lambs",
+  "year": 1991,
+  "duration": 118,
+  "rating": 4.4,
+  "producers": [
+    {
+      "name": "Kenneth",
+      "surname": "Utt"
+    },
+    {
+      "name": "Edward",
+      "surname": "Saxon"
+    },
+    {
+      "name": "Ron",
+      "surname": "Bozman"
+    }
+  ],
+  "directors": [
+    {
+      "name": "Jonathan",
+      "surname": "Demme"
+    }
+  ],
+  "actors": [
+    {
+      "name": "Jodie",
+      "surname": "Foster"
+    },
+    {
+      "name": "Anthony",
+      "surname": "Hopkins"
+    },
+    {
+      "name": "Scott",
+      "surname": "Glenn"
+    }
+  ],
+  "genres": [
+    "Crime",
+    "Drama",
+    "Thriller"
+  ]
+},
+{
+  "_id": {
+    "$oid": "669825cf747acdcf345aad0d"
+  },
+  "title": "Fight Club",
+  "year": 1999,
+  "duration": 139,
+  "rating": 4.4,
+  "producers": [
+    {
+      "name": "Art",
+      "surname": "Linson"
+    },
+    {
+      "name": "Ceán",
+      "surname": "Chaffin"
+    },
+    {
+      "name": "Ross",
+      "surname": "Grayson Bell"
+    }
+  ],
+  "directors": [
+    {
+      "name": "David",
+      "surname": "Fincher"
+    }
+  ],
+  "actors": [
+    {
+      "name": "Brad",
+      "surname": "Pitt"
+    },
+    {
+      "name": "Edward",
+      "surname": "Norton"
+    },
+    {
+      "name": "Helena",
+      "surname": "Bonham Carter"
+    }
+  ],
+  "genres": [
+    "Drama"
+  ]
+},
+{
+  "_id": {
+    "$oid": "669825cf747acdcf345aad0e"
+  },
+  "title": "Goodfellas",
+  "year": 1990,
+  "duration": 146,
+  "rating": 4.3,
+  "producers": [
+    {
+      "name": "Irwin",
+      "surname": "Winkler"
+    }
+  ],
+  "directors": [
+    {
+      "name": "Martin",
+      "surname": "Scorsese"
+    }
+  ],
+  "actors": [
+    {
+      "name": "Robert",
+      "surname": "De Niro"
+    },
+    {
+      "name": "Ray",
+      "surname": "Liotta"
+    },
+    {
+      "name": "Joe",
+      "surname": "Pesci"
+    }
+  ],
+  "genres": [
+    "Biography",
+    "Crime",
+    "Drama"
+  ]
+},
+{
+  "_id": {
+    "$oid": "669825cf747acdcf345aad0f"
+  },
+  "title": "Star Wars: Episode V - The Empire Strikes Back",
+  "year": 1980,
+  "duration": 124,
+  "rating": 4.4,
+  "producers": [
+    {
+      "name": "Gary",
+      "surname": "Kurtz"
+    }
+  ],
+  "directors": [
+    {
+      "name": "Irvin",
+      "surname": "Kershner"
+    }
+  ],
+  "actors": [
+    {
+      "name": "Mark",
+      "surname": "Hamill"
+    },
+    {
+      "name": "Harrison",
+      "surname": "Ford"
+    },
+    {
+      "name": "Carrie",
+      "surname": "Fisher"
+    }
+  ],
+  "genres": [
+    "Action",
+    "Adventure",
+    "Fantasy"
+  ]
+},
+{
+  "_id": {
+    "$oid": "669825cf747acdcf345aad10"
+  },
+  "title": "The Green Mile",
+  "year": 1999,
+  "duration": 189,
+  "rating": 4.4,
+  "producers": [
+    {
+      "name": "Frank",
+      "surname": "Darabont"
+    },
+    {
+      "name": "David",
+      "surname": "Valdes"
+    }
+  ],
+  "directors": [
+    {
+      "name": "Frank",
+      "surname": "Darabont"
+    }
+  ],
+  "actors": [
+    {
+      "name": "Tom",
+      "surname": "Hanks"
+    },
+    {
+      "name": "Michael",
+      "surname": "Clarke Duncan"
+    },
+    {
+      "name": "David",
+      "surname": "Morse"
+    }
+  ],
+  "genres": [
+    "Crime",
+    "Drama",
+    "Fantasy"
+  ]
+},
+{
+  "_id": {
+    "$oid": "669825cf747acdcf345aad11"
+  },
+  "title": "Gladiator",
+  "year": 2000,
+  "duration": 155,
+  "rating": 4.3,
+  "producers": [
+    {
+      "name": "Douglas",
+      "surname": "Wick"
+    },
+    {
+      "name": "David",
+      "surname": "Franzoni"
+    },
+    {
+      "name": "Branko",
+      "surname": "Lustig"
+    }
+  ],
+  "directors": [
+    {
+      "name": "Ridley",
+      "surname": "Scott"
+    }
+  ],
+  "actors": [
+    {
+      "name": "Russell",
+      "surname": "Crowe"
+    },
+    {
+      "name": "Joaquin",
+      "surname": "Phoenix"
+    },
+    {
+      "name": "Connie",
+      "surname": "Nielsen"
+    }
+  ],
+  "genres": [
+    "Action",
+    "Adventure",
+    "Drama"
+  ]
+},
+{
+  "_id": {
+    "$oid": "669825cf747acdcf345aad12"
+  },
+  "title": "The Pianist",
+  "year": 2002,
+  "duration": 150,
+  "rating": 4.5,
+  "producers": [
+    {
+      "name": "Roman",
+      "surname": "Polanski"
+    },
+    {
+      "name": "Robert",
+      "surname": "Benmussa"
+    },
+    {
+      "name": "Alain",
+      "surname": "Sarde"
+    }
+  ],
+  "directors": [
+    {
+      "name": "Roman",
+      "surname": "Polanski"
+    }
+  ],
+  "actors": [
+    {
+      "name": "Adrien",
+      "surname": "Brody"
+    },
+    {
+      "name": "Thomas",
+      "surname": "Kretschmann"
+    },
+    {
+      "name": "Frank",
+      "surname": "Finlay"
+    }
+  ],
+  "genres": [
+    "Biography",
+    "Drama",
+    "War"
+  ]
+},
+{
+  "_id": {
+    "$oid": "669825cf747acdcf345aad13"
+  },
+  "title": "The Departed",
+  "year": 2006,
+  "duration": 151,
+  "rating": 4.5,
+  "producers": [
+    {
+      "name": "Brad",
+      "surname": "Pitt"
+    },
+    {
+      "name": "Brad",
+      "surname": "Grey"
+    },
+    {
+      "name": "Graham",
+      "surname": "King"
+    }
+  ],
+  "directors": [
+    {
+      "name": "Martin",
+      "surname": "Scorsese"
+    }
+  ],
+  "actors": [
+    {
+      "name": "Leonardo",
+      "surname": "DiCaprio"
+    },
+    {
+      "name": "Matt",
+      "surname": "Damon"
+    },
+    {
+      "name": "Jack",
+      "surname": "Nicholson"
+    }
+  ],
+  "genres": [
+    "Crime",
+    "Drama",
+    "Thriller"
+  ]
+},
+{
+  "_id": {
+    "$oid": "669825cf747acdcf345aad14"
+  },
+  "title": "Saving Private Ryan",
+  "year": 1998,
+  "duration": 169,
+  "rating": 4.5,
+  "producers": [
+    {
+      "name": "Steven",
+      "surname": "Spielberg"
+    },
+    {
+      "name": "Ian",
+      "surname": "Bryce"
+    },
+    {
+      "name": "Mark",
+      "surname": "Gordon"
+    }
+  ],
+  "directors": [
+    {
+      "name": "Steven",
+      "surname": "Spielberg"
+    }
+  ],
+  "actors": [
+    {
+      "name": "Tom",
+      "surname": "Hanks"
+    },
+    {
+      "name": "Matt",
+      "surname": "Damon"
+    },
+    {
+      "name": "Tom",
+      "surname": "Sizemore"
+    }
+  ],
+  "genres": [
+    "Drama",
+    "War"
+  ]
+},
+{
+  "_id": {
+    "$oid": "669825cf747acdcf345aad15"
+  },
+  "title": "The Prestige",
+  "year": 2006,
+  "duration": 130,
+  "rating": 4.3,
+  "producers": [
+    {
+      "name": "Emma",
+      "surname": "Thomas"
+    },
+    {
+      "name": "Christopher",
+      "surname": "Nolan"
+    }
+  ],
+  "directors": [
+    {
+      "name": "Christopher",
+      "surname": "Nolan"
+    }
+  ],
+  "actors": [
+    {
+      "name": "Hugh",
+      "surname": "Jackman"
+    },
+    {
+      "name": "Christian",
+      "surname": "Bale"
+    },
+    {
+      "name": "Michael",
+      "surname": "Caine"
+    }
+  ],
+  "genres": [
+    "Drama",
+    "Mystery",
+    "Sci-Fi"
+  ]
+},
+{
+  "_id": {
+    "$oid": "669825cf747acdcf345aad16"
+  },
+  "title": "The Intouchables",
+  "year": 2011,
+  "duration": 112,
+  "rating": 4.5,
+  "producers": [
+    {
+      "name": "Nicolas",
+      "surname": "Duval-Adassovsky"
+    },
+    {
+      "name": "Laurent",
+      "surname": "Zeitoun"
+    },
+    {
+      "name": "Yann",
+      "surname": "Zenou"
+    }
+  ],
+  "directors": [
+    {
+      "name": "Olivier",
+      "surname": "Nakache"
+    },
+    {
+      "name": "Éric",
+      "surname": "Toledano"
+    }
+  ],
+  "actors": [
+    {
+      "name": "François",
+      "surname": "Cluzet"
+    },
+    {
+      "name": "Omar",
+      "surname": "Sy"
+    },
+    {
+      "name": "Anne",
+      "surname": "Le Ny"
+    }
+  ],
+  "genres": [
+    "Biography",
+    "Comedy",
+    "Drama"
+  ]
+},
+{
+  "_id": {
+    "$oid": "669825cf747acdcf345aad17"
+  },
+  "title": "Whiplash",
+  "year": 2014,
+  "duration": 107,
+  "rating": 4.4,
+  "producers": [
+    {
+      "name": "Jason",
+      "surname": "Blum"
+    },
+    {
+      "name": "Helen",
+      "surname": "Estabrook"
+    },
+    {
+      "name": "Michel",
+      "surname": "Litvak"
+    }
+  ],
+  "directors": [
+    {
+      "name": "Damien",
+      "surname": "Chazelle"
+    }
+  ],
+  "actors": [
+    {
+      "name": "Miles",
+      "surname": "Teller"
+    },
+    {
+      "name": "J.K.",
+      "surname": "Simmons"
+    },
+    {
+      "name": "Paul",
+      "surname": "Reiser"
+    }
+  ],
+  "genres": [
+    "Drama",
+    "Music"
+  ]
+},
+{
+  "_id": {
+    "$oid": "669825cf747acdcf345aad18"
+  },
+  "title": "Parasite",
+  "year": 2019,
+  "duration": 132,
+  "rating": 4.6,
+  "producers": [
+    {
+      "name": "Kwak",
+      "surname": "Sin-ae"
+    },
+    {
+      "name": "Moon",
+      "surname": "Yang-kwon"
+    }
+  ],
+  "directors": [
+    {
+      "name": "Bong",
+      "surname": "Joon-ho"
+    }
+  ],
+  "actors": [
+    {
+      "name": "Song",
+      "surname": "Kang-ho"
+    },
+    {
+      "name": "Lee",
+      "surname": "Sun-kyun"
+    },
+    {
+      "name": "Cho",
+      "surname": "Yeo-jeong"
+    }
+  ],
+  "genres": [
+    "Comedy",
+    "Drama",
+    "Thriller"
+  ]
+},
+{
+  "_id": {
+    "$oid": "669825cf747acdcf345aad19"
+  },
+  "title": "Interstellar",
+  "year": 2014,
+  "duration": 169,
+  "rating": 4.6,
+  "producers": [
+    {
+      "name": "Emma",
+      "surname": "Thomas"
+    },
+    {
+      "name": "Christopher",
+      "surname": "Nolan"
+    },
+    {
+      "name": "Lynda",
+      "surname": "Obst"
+    }
+  ],
+  "directors": [
+    {
+      "name": "Christopher",
+      "surname": "Nolan"
+    }
+  ],
+  "actors": [
+    {
+      "name": "Matthew",
+      "surname": "McConaughey"
+    },
+    {
+      "name": "Anne",
+      "surname": "Hathaway"
+    },
+    {
+      "name": "Jessica",
+      "surname": "Chastain"
+    }
+  ],
+  "genres": [
+    "Adventure",
+    "Drama",
+    "Sci-Fi"
+  ]
+},
+{
+  "_id": {
+    "$oid": "669825cf747acdcf345aad1a"
+  },
+  "title": "Django Unchained",
+  "year": 2012,
+  "duration": 165,
+  "rating": 4.3,
+  "producers": [
+    {
+      "name": "Reginald",
+      "surname": "Hudlin"
+    },
+    {
+      "name": "Stacey",
+      "surname": "Sher"
+    },
+    {
+      "name": "Pilar",
+      "surname": "Savone"
+    }
+  ],
+  "directors": [
+    {
+      "name": "Quentin",
+      "surname": "Tarantino"
+    }
+  ],
+  "actors": [
+    {
+      "name": "Jamie",
+      "surname": "Foxx"
+    },
+    {
+      "name": "Christoph",
+      "surname": "Waltz"
+    },
+    {
+      "name": "Leonardo",
+      "surname": "DiCaprio"
+    }
+  ],
+  "genres": [
+    "Drama",
+    "Western"
+  ]
+},
+{
+  "_id": {
+    "$oid": "669825cf747acdcf345aad1b"
+  },
+  "title": "Mad Max: Fury Road",
+  "year": 2015,
+  "duration": 120,
+  "rating": 4.4,
+  "producers": [
+    {
+      "name": "George",
+      "surname": "Miller"
+    },
+    {
+      "name": "Doug",
+      "surname": "Mitchell"
+    },
+    {
+      "name": "PJ",
+      "surname": "Voeten"
+    }
+  ],
+  "directors": [
+    {
+      "name": "George",
+      "surname": "Miller"
+    }
+  ],
+  "actors": [
+    {
+      "name": "Tom",
+      "surname": "Hardy"
+    },
+    {
+      "name": "Charlize",
+      "surname": "Theron"
+    },
+    {
+      "name": "Nicholas",
+      "surname": "Hoult"
+    }
+  ],
+  "genres": [
+    "Action",
+    "Adventure",
+    "Sci-Fi"
+  ]
+},
+{
+  "_id": {
+    "$oid": "669825cf747acdcf345aad1c"
+  },
+  "title": "Joker",
+  "year": 2019,
+  "duration": 122,
+  "rating": 4.3,
+  "producers": [
+    {
+      "name": "Todd",
+      "surname": "Phillips"
+    },
+    {
+      "name": "Bradley",
+      "surname": "Cooper"
+    },
+    {
+      "name": "Emma",
+      "surname": "Tillinger Koskoff"
+    }
+  ],
+  "directors": [
+    {
+      "name": "Todd",
+      "surname": "Phillips"
+    }
+  ],
+  "actors": [
+    {
+      "name": "Joaquin",
+      "surname": "Phoenix"
+    },
+    {
+      "name": "Robert",
+      "surname": "De Niro"
+    },
+    {
+      "name": "Zazie",
+      "surname": "Beetz"
+    }
+  ],
+  "genres": [
+    "Crime",
+    "Drama",
+    "Thriller"
+  ]
+},
+{
+  "_id": {
+    "$oid": "669825cf747acdcf345aad1d"
+  },
+  "title": "The Dark Knight Rises",
+  "year": 2012,
+  "duration": 165,
+  "rating": 4.4,
+  "producers": [
+    {
+      "name": "Emma",
+      "surname": "Thomas"
+    },
+    {
+      "name": "Christopher",
+      "surname": "Nolan"
+    },
+    {
+      "name": "Charles",
+      "surname": "Roven"
+    }
+  ],
+  "directors": [
+    {
+      "name": "Christopher",
+      "surname": "Nolan"
+    }
+  ],
+  "actors": [
+    {
+      "name": "Christian",
+      "surname": "Bale"
+    },
+    {
+      "name": "Tom",
+      "surname": "Hardy"
+    },
+    {
+      "name": "Anne",
+      "surname": "Hathaway"
+    }
+  ],
+  "genres": [
+    "Action",
+    "Thriller"
+  ]
+},
+{
+  "_id": {
+    "$oid": "669825cf747acdcf345aad1e"
+  },
+  "title": "La La Land",
+  "year": 2016,
+  "duration": 128,
+  "rating": 4.4,
+  "producers": [
+    {
+      "name": "Fred",
+      "surname": "Berger"
+    },
+    {
+      "name": "Jordan",
+      "surname": "Horowitz"
+    },
+    {
+      "name": "Marc",
+      "surname": "Platt"
+    }
+  ],
+  "directors": [
+    {
+      "name": "Damien",
+      "surname": "Chazelle"
+    }
+  ],
+  "actors": [
+    {
+      "name": "Ryan",
+      "surname": "Gosling"
+    },
+    {
+      "name": "Emma",
+      "surname": "Stone"
+    },
+    {
+      "name": "John",
+      "surname": "Legend"
+    }
+  ],
+  "genres": [
+    "Comedy",
+    "Drama",
+    "Musical"
+  ]
+},
+{
+  "_id": {
+    "$oid": "669825cf747acdcf345aad1f"
+  },
+  "title": "The Revenant",
+  "year": 2015,
+  "duration": 156,
+  "rating": 4.3,
+  "producers": [
+    {
+      "name": "Arnon",
+      "surname": "Milchan"
+    },
+    {
+      "name": "Steve",
+      "surname": "Golin"
+    },
+    {
+      "name": "Alejandro G.",
+      "surname": "Iñárritu"
+    }
+  ],
+  "directors": [
+    {
+      "name": "Alejandro G.",
+      "surname": "Iñárritu"
+    }
+  ],
+  "actors": [
+    {
+      "name": "Leonardo",
+      "surname": "DiCaprio"
+    },
+    {
+      "name": "Tom",
+      "surname": "Hardy"
+    },
+    {
+      "name": "Domhnall",
+      "surname": "Gleeson"
+    }
+  ],
+  "genres": [
+    "Adventure",
+    "Drama",
+    "Thriller"
+  ]
+},
+{
+  "_id": {
+    "$oid": "669825cf747acdcf345aad20"
+  },
+  "title": "Avatar",
+  "year": 2009,
+  "duration": 162,
+  "rating": 4.3,
+  "producers": [
+    {
+      "name": "James",
+      "surname": "Cameron"
+    },
+    {
+      "name": "Jon",
+      "surname": "Landau"
+    }
+  ],
+  "directors": [
+    {
+      "name": "James",
+      "surname": "Cameron"
+    }
+  ],
+  "actors": [
+    {
+      "name": "Sam",
+      "surname": "Worthington"
+    },
+    {
+      "name": "Zoe",
+      "surname": "Saldana"
+    },
+    {
+      "name": "Sigourney",
+      "surname": "Weaver"
+    }
+  ],
+  "genres": [
+    "Action",
+    "Adventure",
+    "Sci-Fi"
+  ]
+},
+{
+  "_id": {
+    "$oid": "669825cf747acdcf345aad21"
+  },
+  "title": "The Grand Budapest Hotel",
+  "year": 2014,
+  "duration": 99,
+  "rating": 4.4,
+  "producers": [
+    {
+      "name": "Wes",
+      "surname": "Anderson"
+    },
+    {
+      "name": "Scott",
+      "surname": "Rudin"
+    },
+    {
+      "name": "Steven M.",
+      "surname": "Rales"
+    }
+  ],
+  "directors": [
+    {
+      "name": "Wes",
+      "surname": "Anderson"
+    }
+  ],
+  "actors": [
+    {
+      "name": "Ralph",
+      "surname": "Fiennes"
+    },
+    {
+      "name": "F. Murray",
+      "surname": "Abraham"
+    },
+    {
+      "name": "Mathieu",
+      "surname": "Amalric"
+    }
+  ],
+  "genres": [
+    "Adventure",
+    "Comedy",
+    "Crime"
+  ]
+},
+{
+  "_id": {
+    "$oid": "669825cf747acdcf345aad22"
+  },
+  "title": "The Social Network",
+  "year": 2010,
+  "duration": 120,
+  "rating": 4.3,
+  "producers": [
+    {
+      "name": "Scott",
+      "surname": "Rudin"
+    },
+    {
+      "name": "Dana",
+      "surname": "Brunetti"
+    },
+    {
+      "name": "Michael",
+      "surname": "De Luca"
+    }
+  ],
+  "directors": [
+    {
+      "name": "David",
+      "surname": "Fincher"
+    }
+  ],
+  "actors": [
+    {
+      "name": "Jesse",
+      "surname": "Eisenberg"
+    },
+    {
+      "name": "Andrew",
+      "surname": "Garfield"
+    },
+    {
+      "name": "Justin",
+      "surname": "Timberlake"
+    }
+  ],
+  "genres": [
+    "Biography",
+    "Drama"
+  ]
+},
+{
+  "_id": {
+    "$oid": "669825cf747acdcf345aad23"
+  },
+  "title": "The Wolf of Wall Street",
+  "year": 2013,
+  "duration": 180,
+  "rating": 4.3,
+  "producers": [
+    {
+      "name": "Martin",
+      "surname": "Scorsese"
+    },
+    {
+      "name": "Leonardo",
+      "surname": "DiCaprio"
+    },
+    {
+      "name": "Emma",
+      "surname": "Tillinger Koskoff"
+    }
+  ],
+  "directors": [
+    {
+      "name": "Martin",
+      "surname": "Scorsese"
+    }
+  ],
+  "actors": [
+    {
+      "name": "Leonardo",
+      "surname": "DiCaprio"
+    },
+    {
+      "name": "Jonah",
+      "surname": "Hill"
+    },
+    {
+      "name": "Margot",
+      "surname": "Robbie"
+    }
+  ],
+  "genres": [
+    "Biography",
+    "Comedy",
+    "Crime"
+  ]
+},
+{
+  "_id": {
+    "$oid": "669825cf747acdcf345aad24"
+  },
+  "title": "Her",
+  "year": 2013,
+  "duration": 126,
+  "rating": 4.3,
+  "producers": [
+    {
+      "name": "Megan",
+      "surname": "Ellison"
+    },
+    {
+      "name": "Spike",
+      "surname": "Jonze"
+    },
+    {
+      "name": "Vincent",
+      "surname": "Landay"
+    }
+  ],
+  "directors": [
+    {
+      "name": "Spike",
+      "surname": "Jonze"
+    }
+  ],
+  "actors": [
+    {
+      "name": "Joaquin",
+      "surname": "Phoenix"
+    },
+    {
+      "name": "Scarlett",
+      "surname": "Johansson"
+    },
+    {
+      "name": "Amy",
+      "surname": "Adams"
+    }
+  ],
+  "genres": [
+    "Drama",
+    "Romance",
+    "Sci-Fi"
+  ]
+},
+{
+  "_id": {
+    "$oid": "669825cf747acdcf345aad25"
+  },
+  "title": "The Avengers",
+  "year": 2012,
+  "duration": 143,
+  "rating": 4.3,
+  "producers": [
+    {
+      "name": "Kevin",
+      "surname": "Feige"
+    }
+  ],
+  "directors": [
+    {
+      "name": "Joss",
+      "surname": "Whedon"
+    }
+  ],
+  "actors": [
+    {
+      "name": "Robert",
+      "surname": "Downey Jr."
+    },
+    {
+      "name": "Chris",
+      "surname": "Evans"
+    },
+    {
+      "name": "Scarlett",
+      "surname": "Johansson"
+    }
+  ],
+  "genres": [
+    "Action",
+    "Adventure",
+    "Sci-Fi"
+  ]
+},
+{
+  "_id": {
+    "$oid": "669825cf747acdcf345aad26"
+  },
+  "title": "Gravity",
+  "year": 2013,
+  "duration": 91,
+  "rating": 4.2,
+  "producers": [
+    {
+      "name": "Alfonso",
+      "surname": "Cuarón"
+    },
+    {
+      "name": "David",
+      "surname": "Heyman"
+    },
+    {
+      "name": "Jonás",
+      "surname": "Cuarón"
+    }
+  ],
+  "directors": [
+    {
+      "name": "Alfonso",
+      "surname": "Cuarón"
+    }
+  ],
+  "actors": [
+    {
+      "name": "Sandra",
+      "surname": "Bullock"
+    },
+    {
+      "name": "George",
+      "surname": "Clooney"
+    },
+    {
+      "name": "Ed",
+      "surname": "Harris"
+    }
+  ],
+  "genres": [
+    "Drama",
+    "Sci-Fi",
+    "Thriller"
+  ]
+},
+{
+  "_id": {
+    "$oid": "669825cf747acdcf345aad27"
+  },
+  "title": "The Great Gatsby",
+  "year": 2013,
+  "duration": 143,
+  "rating": 4.2,
+  "producers": [
+    {
+      "name": "Baz",
+      "surname": "Luhrmann"
+    },
+    {
+      "name": "Catherine",
+      "surname": "Martin"
+    }
+  ],
+  "directors": [
+    {
+      "name": "Baz",
+      "surname": "Luhrmann"
+    }
+  ],
+  "actors": [
+    {
+      "name": "Leonardo",
+      "surname": "DiCaprio"
+    },
+    {
+      "name": "Carey",
+      "surname": "Mulligan"
+    },
+    {
+      "name": "Joel",
+      "surname": "Edgerton"
+    }
+  ],
+  "genres": [
+    "Drama",
+    "Romance"
+  ]
+},
+{
+  "_id": {
+    "$oid": "669825cf747acdcf345aad28"
+  },
+  "title": "The Great Dictator",
+  "year": 1940,
+  "duration": 125,
+  "rating": 4.5,
+  "producers": [
+    {
+      "name": "Charlie",
+      "surname": "Chaplin"
+    }
+  ],
+  "directors": [
+    {
+      "name": "Charlie",
+      "surname": "Chaplin"
+    }
+  ],
+  "actors": [
+    {
+      "name": "Charlie",
+      "surname": "Chaplin"
+    },
+    {
+      "name": "Paulette",
+      "surname": "Goddard"
+    },
+    {
+      "name": "Jack",
+      "surname": "Oakie"
+    }
+  ],
+  "genres": [
+    "Comedy",
+    "Drama",
+    "War"
+  ]
+},
+{
+  "_id": {
+    "$oid": "669825cf747acdcf345aad29"
+  },
+  "title": "The Usual Suspects",
+  "year": 1995,
+  "duration": 106,
+  "rating": 4.5,
+  "producers": [
+    {
+      "name": "Bryan",
+      "surname": "Singer"
+    },
+    {
+      "name": "Michael",
+      "surname": "McQuiggan"
+    }
+  ],
+  "directors": [
+    {
+      "name": "Bryan",
+      "surname": "Singer"
+    }
+  ],
+  "actors": [
+    {
+      "name": "Kevin",
+      "surname": "Spacey"
+    },
+    {
+      "name": "Gabriel",
+      "surname": "Byrne"
+    },
+    {
+      "name": "Chazz",
+      "surname": "Palminteri"
+    }
+  ],
+  "genres": [
+    "Crime",
+    "Drama",
+    "Mystery"
+  ]
+},
+{
+  "_id": {
+    "$oid": "669825cf747acdcf345aad2a"
+  },
+  "title": "Amélie",
+  "year": 2001,
+  "duration": 122,
+  "rating": 4.5,
+  "producers": [
+    {
+      "name": "Jean-Marc",
+      "surname": "Deschamps"
+    },
+    {
+      "name": "Claudie",
+      "surname": "Ossard"
+    }
+  ],
+  "directors": [
+    {
+      "name": "Jean-Pierre",
+      "surname": "Jeunet"
+    }
+  ],
+  "actors": [
+    {
+      "name": "Audrey",
+      "surname": "Tautou"
+    },
+    {
+      "name": "Mathieu",
+      "surname": "Kassovitz"
+    },
+    {
+      "name": "Rufus",
+      "surname": "Wainwright"
+    }
+  ],
+  "genres": [
+    "Comedy",
+    "Romance"
+  ]
+},
+{
+  "_id": {
+    "$oid": "669825cf747acdcf345aad2b"
+  },
+  "title": "Back to the Future",
+  "year": 1985,
+  "duration": 116,
+  "rating": 4.5,
+  "producers": [
+    {
+      "name": "Bob",
+      "surname": "Gale"
+    },
+    {
+      "name": "Neil",
+      "surname": "Canton"
+    }
+  ],
+  "directors": [
+    {
+      "name": "Robert",
+      "surname": "Zemeckis"
+    }
+  ],
+  "actors": [
+    {
+      "name": "Michael",
+      "surname": "J. Fox"
+    },
+    {
+      "name": "Christopher",
+      "surname": "Lloyd"
+    },
+    {
+      "name": "Lea",
+      "surname": "Thompson"
+    }
+  ],
+  "genres": [
+    "Adventure",
+    "Comedy",
+    "Sci-Fi"
+  ]
+},
+{
+  "_id": {
+    "$oid": "669825cf747acdcf345aad2c"
+  },
+  "title": "The Sixth Sense",
+  "year": 1999,
+  "duration": 107,
+  "rating": 4.4,
+  "producers": [
+    {
+      "name": "Frank",
+      "surname": "Marshall"
+    },
+    {
+      "name": "Kathleen",
+      "surname": "Kennedy"
+    }
+  ],
+  "directors": [
+    {
+      "name": "M. Night",
+      "surname": "Shyamalan"
+    }
+  ],
+  "actors": [
+    {
+      "name": "Bruce",
+      "surname": "Willis"
+    },
+    {
+      "name": "Haley",
+      "surname": "Joel Osment"
+    },
+    {
+      "name": "Toni",
+      "surname": "Collette"
+    }
+  ],
+  "genres": [
+    "Drama",
+    "Mystery",
+    "Thriller"
+  ]
+},
+{
+  "_id": {
+    "$oid": "669825cf747acdcf345aad2d"
+  },
+  "title": "Jurassic Park",
+  "year": 1993,
+  "duration": 127,
+  "rating": 4.3,
+  "producers": [
+    {
+      "name": "Kathleen",
+      "surname": "Kennedy"
+    },
+    {
+      "name": "Gerald R.",
+      "surname": "Molen"
+    }
+  ],
+  "directors": [
+    {
+      "name": "Steven",
+      "surname": "Spielberg"
+    }
+  ],
+  "actors": [
+    {
+      "name": "Sam",
+      "surname": "Neill"
+    },
+    {
+      "name": "Laura",
+      "surname": "Dern"
+    },
+    {
+      "name": "Jeff",
+      "surname": "Goldblum"
+    }
+  ],
+  "genres": [
+    "Adventure",
+    "Sci-Fi",
+    "Thriller"
+  ]
+},
+{
+  "_id": {
+    "$oid": "669825cf747acdcf345aad2e"
+  },
+  "title": "The Matrix Reloaded",
+  "year": 2003,
+  "duration": 138,
+  "rating": 4.2,
+  "producers": [
+    {
+      "name": "Joel",
+      "surname": "Silver"
+    }
+  ],
+  "directors": [
+    {
+      "name": "Lana",
+      "surname": "Wachowski"
+    },
+    {
+      "name": "Lilly",
+      "surname": "Wachowski"
+    }
+  ],
+  "actors": [
+    {
+      "name": "Keanu",
+      "surname": "Reeves"
+    },
+    {
+      "name": "Laurence",
+      "surname": "Fishburne"
+    },
+    {
+      "name": "Carrie-Anne",
+      "surname": "Moss"
+    }
+  ],
+  "genres": [
+    "Action",
+    "Sci-Fi"
+  ]
+},
+{
+  "_id": {
+    "$oid": "669825cf747acdcf345aad2f"
+  },
+  "title": "The Social Network",
+  "year": 2010,
+  "duration": 120,
+  "rating": 4.4,
+  "producers": [
+    {
+      "name": "Scott",
+      "surname": "Rudin"
+    },
+    {
+      "name": "Dana",
+      "surname": "Brunetti"
+    },
+    {
+      "name": "Michael",
+      "surname": "De Luca"
+    }
+  ],
+  "directors": [
+    {
+      "name": "David",
+      "surname": "Fincher"
+    }
+  ],
+  "actors": [
+    {
+      "name": "Jesse",
+      "surname": "Eisenberg"
+    },
+    {
+      "name": "Andrew",
+      "surname": "Garfield"
+    },
+    {
+      "name": "Justin",
+      "surname": "Timberlake"
+    }
+  ],
+  "genres": [
+    "Biography",
+    "Drama"
+  ]
+},
+{
+  "_id": {
+    "$oid": "669825cf747acdcf345aad30"
+  },
+  "title": "American History X",
+  "year": 1998,
+  "duration": 119,
+  "rating": 4.4,
+  "producers": [
+    {
+      "name": "John",
+      "surname": "Morrissey"
+    },
+    {
+      "name": "David",
+      "surname": "McKenna"
+    }
+  ],
+  "directors": [
+    {
+      "name": "Tony",
+      "surname": "Kaye"
+    }
+  ],
+  "actors": [
+    {
+      "name": "Edward",
+      "surname": "Norton"
+    },
+    {
+      "name": "Edward",
+      "surname": "Furlong"
+    },
+    {
+      "name": "Beverly",
+      "surname": "D'Angelo"
+    }
+  ],
+  "genres": [
+    "Drama"
+  ]
+},
+{
+  "_id": {
+    "$oid": "669825cf747acdcf345aad31"
+  },
+  "title": "City of God",
+  "year": 2002,
+  "duration": 130,
+  "rating": 4.5,
+  "producers": [
+    {
+      "name": "Mauricio",
+      "surname": "Andrade Ramos"
+    },
+    {
+      "name": "Andrea",
+      "surname": "Barata Ribeiro"
+    }
+  ],
+  "directors": [
+    {
+      "name": "Fernando",
+      "surname": "Meirelles"
+    },
+    {
+      "name": "Kátia",
+      "surname": "Lund"
+    }
+  ],
+  "actors": [
+    {
+      "name": "Alexandre",
+      "surname": "Rodrigues"
+    },
+    {
+      "name": "Leandro",
+      "surname": "Firmino"
+    },
+    {
+      "name": "Phellipe",
+      "surname": "Haagensen"
+    }
+  ],
+  "genres": [
+    "Crime",
+    "Drama"
+  ]
+},
+{
+  "_id": {
+    "$oid": "669825cf747acdcf345aad32"
+  },
+  "title": "The Lives of Others",
+  "year": 2006,
+  "duration": 137,
+  "rating": 4.5,
+  "producers": [
+    {
+      "name": "Quirin",
+      "surname": "Berg"
+    },
+    {
+      "name": "Max",
+      "surname": "Wiedemann"
+    }
+  ],
+  "directors": [
+    {
+      "name": "Florian Henckel",
+      "surname": "von Donnersmarck"
+    }
+  ],
+  "actors": [
+    {
+      "name": "Ulrich",
+      "surname": "Mühe"
+    },
+    {
+      "name": "Martina",
+      "surname": "Gedeck"
+    },
+    {
+      "name": "Sebastian",
+      "surname": "Koch"
+    }
+  ],
+  "genres": [
+    "Drama",
+    "Thriller"
+  ]
+},
+{
+  "_id": {
+    "$oid": "669825cf747acdcf345aad33"
+  },
+  "title": "Catch Me If You Can",
+  "year": 2002,
+  "duration": 141,
+  "rating": 4.3,
+  "producers": [
+    {
+      "name": "Steven",
+      "surname": "Spielberg"
+    },
+    {
+      "name": "Walter F.",
+      "surname": "Parkes"
+    }
+  ],
+  "directors": [
+    {
+      "name": "Steven",
+      "surname": "Spielberg"
+    }
+  ],
+  "actors": [
+    {
+      "name": "Leonardo",
+      "surname": "DiCaprio"
+    },
+    {
+      "name": "Tom",
+      "surname": "Hanks"
+    },
+    {
+      "name": "Christopher",
+      "surname": "Walken"
+    }
+  ],
+  "genres": [
+    "Biography",
+    "Crime",
+    "Drama"
+  ]
+},
+{
+  "_id": {
+    "$oid": "669825cf747acdcf345aad34"
+  },
+  "title": "Eternal Sunshine of the Spotless Mind",
+  "year": 2004,
+  "duration": 108,
+  "rating": 4.4,
+  "producers": [
+    {
+      "name": "Anthony",
+      "surname": "Bregman"
+    },
+    {
+      "name": "Steve",
+      "surname": "Golin"
+    },
+    {
+      "name": "Michel",
+      "surname": "Gondry"
+    }
+  ],
+  "directors": [
+    {
+      "name": "Michel",
+      "surname": "Gondry"
+    }
+  ],
+  "actors": [
+    {
+      "name": "Jim",
+      "surname": "Carrey"
+    },
+    {
+      "name": "Kate",
+      "surname": "Winslet"
+    },
+    {
+      "name": "Tom",
+      "surname": "Wilkinson"
+    }
+  ],
+  "genres": [
+    "Drama",
+    "Romance",
+    "Sci-Fi"
+  ]
+},
+{
+  "_id": {
+    "$oid": "669825cf747acdcf345aad35"
+  },
+  "title": "Good Will Hunting",
+  "year": 1997,
+  "duration": 126,
+  "rating": 4.4,
+  "producers": [
+    {
+      "name": "Lawrence",
+      "surname": "Bender"
+    },
+    {
+      "name": "Chris",
+      "surname": "Moore"
+    },
+    {
+      "name": "Kevin",
+      "surname": "Smith"
+    }
+  ],
+  "directors": [
+    {
+      "name": "Gus",
+      "surname": "Van Sant"
+    }
+  ],
+  "actors": [
+    {
+      "name": "Matt",
+      "surname": "Damon"
+    },
+    {
+      "name": "Robin",
+      "surname": "Williams"
+    },
+    {
+      "name": "Ben",
+      "surname": "Affleck"
+    }
+  ],
+  "genres": [
+    "Drama"
+  ]
+},
+{
+  "_id": {
+    "$oid": "669825cf747acdcf345aad36"
+  },
+  "title": "Superbad",
+  "year": 2007,
+  "duration": 113,
+  "rating": 4,
+  "producers": [
+    {
+      "name": "Judd",
+      "surname": "Apatow"
+    },
+    {
+      "name": "Shauna",
+      "surname": "Robertson"
+    }
+  ],
+  "directors": [
+    {
+      "name": "Greg",
+      "surname": "Mottola"
+    }
+  ],
+  "actors": [
+    {
+      "name": "Jonah",
+      "surname": "Hill"
+    },
+    {
+      "name": "Michael",
+      "surname": "Cera"
+    },
+    {
+      "name": "Christopher",
+      "surname": "Mintz-Plasse"
+    }
+  ],
+  "genres": [
+    "Comedy"
+  ]
+},
+{
+  "_id": {
+    "$oid": "669825cf747acdcf345aad37"
+  },
+  "title": "The Hangover",
+  "year": 2009,
+  "duration": 100,
+  "rating": 4.1,
+  "producers": [
+    {
+      "name": "Todd",
+      "surname": "Phillips"
+    },
+    {
+      "name": "Daniel",
+      "surname": "Goldberg"
+    }
+  ],
+  "directors": [
+    {
+      "name": "Todd",
+      "surname": "Phillips"
+    }
+  ],
+  "actors": [
+    {
+      "name": "Bradley",
+      "surname": "Cooper"
+    },
+    {
+      "name": "Ed",
+      "surname": "Helms"
+    },
+    {
+      "name": "Zach",
+      "surname": "Galifianakis"
+    }
+  ],
+  "genres": [
+    "Comedy"
+  ]
+},
+{
+  "_id": {
+    "$oid": "669825cf747acdcf345aad38"
+  },
+  "title": "Anchorman: The Legend of Ron Burgundy",
+  "year": 2004,
+  "duration": 94,
+  "rating": 4,
+  "producers": [
+    {
+      "name": "Judd",
+      "surname": "Apatow"
+    },
+    {
+      "name": "Shauna",
+      "surname": "Robertson"
+    },
+    {
+      "name": "David",
+      "surname": "O. Russell"
+    }
+  ],
+  "directors": [
+    {
+      "name": "Adam",
+      "surname": "McKay"
+    }
+  ],
+  "actors": [
+    {
+      "name": "Will",
+      "surname": "Ferrell"
+    },
+    {
+      "name": "Christina",
+      "surname": "Applegate"
+    },
+    {
+      "name": "Paul",
+      "surname": "Rudd"
+    }
+  ],
+  "genres": [
+    "Comedy"
+  ]
+},
+{
+  "_id": {
+    "$oid": "669825cf747acdcf345aad39"
+  },
+  "title": "Monty Python and the Holy Grail",
+  "year": 1975,
+  "duration": 91,
+  "rating": 4.3,
+  "producers": [
+    {
+      "name": "Mark",
+      "surname": "Forstater"
+    },
+    {
+      "name": "Michael",
+      "surname": "White"
+    }
+  ],
+  "directors": [
+    {
+      "name": "Terry",
+      "surname": "Gilliam"
+    },
+    {
+      "name": "Terry",
+      "surname": "Jones"
+    }
+  ],
+  "actors": [
+    {
+      "name": "Graham",
+      "surname": "Chapman"
+    },
+    {
+      "name": "John",
+      "surname": "Cleese"
+    },
+    {
+      "name": "Eric",
+      "surname": "Idle"
+    }
+  ],
+  "genres": [
+    "Adventure",
+    "Comedy",
+    "Fantasy"
+  ]
+},
+{
+  "_id": {
+    "$oid": "669825cf747acdcf345aad3a"
+  },
+  "title": "Ferris Bueller's Day Off",
+  "year": 1986,
+  "duration": 103,
+  "rating": 4.2,
+  "producers": [
+    {
+      "name": "John",
+      "surname": "Hughes"
+    }
+  ],
+  "directors": [
+    {
+      "name": "John",
+      "surname": "Hughes"
+    }
+  ],
+  "actors": [
+    {
+      "name": "Matthew",
+      "surname": "Broderick"
+    },
+    {
+      "name": "Alan",
+      "surname": "Ruck"
+    },
+    {
+      "name": "Mia",
+      "surname": "Sara"
+    }
+  ],
+  "genres": [
+    "Comedy",
+    "Drama"
+  ]
+},
+{
+  "_id": {
+    "$oid": "669825cf747acdcf345aad3b"
+  },
+  "title": "Airplane!",
+  "year": 1980,
+  "duration": 88,
+  "rating": 4.2,
+  "producers": [
+    {
+      "name": "Jon",
+      "surname": "Davison"
+    }
+  ],
+  "directors": [
+    {
+      "name": "Jim",
+      "surname": "Abrahams"
+    },
+    {
+      "name": "David",
+      "surname": "Zucker"
+    },
+    {
+      "name": "Jerry",
+      "surname": "Zucker"
+    }
+  ],
+  "actors": [
+    {
+      "name": "Robert",
+      "surname": "Hays"
+    },
+    {
+      "name": "Julie",
+      "surname": "Hagerty"
+    },
+    {
+      "name": "Leslie",
+      "surname": "Nielsen"
+    }
+  ],
+  "genres": [
+    "Comedy"
+  ]
+},
+{
+  "_id": {
+    "$oid": "669825cf747acdcf345aad3c"
+  },
+  "title": "Shaun of the Dead",
+  "year": 2004,
+  "duration": 99,
+  "rating": 4.1,
+  "producers": [
+    {
+      "name": "Nira",
+      "surname": "Park"
+    }
+  ],
+  "directors": [
+    {
+      "name": "Edgar",
+      "surname": "Wright"
+    }
+  ],
+  "actors": [
+    {
+      "name": "Simon",
+      "surname": "Pegg"
+    },
+    {
+      "name": "Nick",
+      "surname": "Frost"
+    },
+    {
+      "name": "Kate",
+      "surname": "Ashfield"
+    }
+  ],
+  "genres": [
+    "Comedy",
+    "Horror"
+  ]
+},
+{
+  "_id": {
+    "$oid": "669825cf747acdcf345aad3d"
+  },
+  "title": "Groundhog Day",
+  "year": 1993,
+  "duration": 101,
+  "rating": 4.3,
+  "producers": [
+    {
+      "name": "Harold",
+      "surname": "Ramis"
+    }
+  ],
+  "directors": [
+    {
+      "name": "Harold",
+      "surname": "Ramis"
+    }
+  ],
+  "actors": [
+    {
+      "name": "Bill",
+      "surname": "Murray"
+    },
+    {
+      "name": "Andie",
+      "surname": "MacDowell"
+    },
+    {
+      "name": "Chris",
+      "surname": "Elliott"
+    }
+  ],
+  "genres": [
+    "Comedy",
+    "Fantasy",
+    "Romance"
+  ]
+},
+{
+  "_id": {
+    "$oid": "669825cf747acdcf345aad3e"
+  },
+  "title": "The Big Lebowski",
+  "year": 1998,
+  "duration": 117,
+  "rating": 4.1,
+  "producers": [
+    {
+      "name": "Ethan",
+      "surname": "Coen"
+    },
+    {
+      "name": "Joel",
+      "surname": "Coen"
+    }
+  ],
+  "directors": [
+    {
+      "name": "Joel",
+      "surname": "Coen"
+    }
+  ],
+  "actors": [
+    {
+      "name": "Jeff",
+      "surname": "Bridges"
+    },
+    {
+      "name": "John",
+      "surname": "Goodman"
+    },
+    {
+      "name": "Julianne",
+      "surname": "Moore"
+    }
+  ],
+  "genres": [
+    "Comedy",
+    "Crime"
+  ]
+},
+{
+  "_id": {
+    "$oid": "669825cf747acdcf345aad3f"
+  },
+  "title": "Deadpool",
+  "year": 2016,
+  "duration": 108,
+  "rating": 4.2,
+  "producers": [
+    {
+      "name": "Simon",
+      "surname": "Kinberg"
+    },
+    {
+      "name": "Ryan",
+      "surname": "Reynolds"
+    },
+    {
+      "name": "Lauren",
+      "surname": "Shuler Donner"
+    }
+  ],
+  "directors": [
+    {
+      "name": "Tim",
+      "surname": "Miller"
+    }
+  ],
+  "actors": [
+    {
+      "name": "Ryan",
+      "surname": "Reynolds"
+    },
+    {
+      "name": "Morena",
+      "surname": "Baccarin"
+    },
+    {
+      "name": "Ed",
+      "surname": "Skrein"
+    }
+  ],
+  "genres": [
+    "Action",
+    "Adventure",
+    "Comedy"
+  ]
+},
+{
+  "_id": {
+    "$oid": "669825cf747acdcf345aad40"
+  },
+  "title": "The Shining",
+  "year": 1980,
+  "duration": 146,
+  "rating": 4.4,
+  "producers": [
+    {
+      "name": "Stanley",
+      "surname": "Kubrick"
+    },
+    {
+      "name": "Robert",
+      "surname": "Fryer"
+    },
+    {
+      "name": "Martin",
+      "surname": "Richards"
+    }
+  ],
+  "directors": [
+    {
+      "name": "Stanley",
+      "surname": "Kubrick"
+    }
+  ],
+  "actors": [
+    {
+      "name": "Jack",
+      "surname": "Nicholson"
+    },
+    {
+      "name": "Shelley",
+      "surname": "Duvall"
+    },
+    {
+      "name": "Danny",
+      "surname": "Lloyd"
+    }
+  ],
+  "genres": [
+    "Drama",
+    "Horror"
+  ]
+},
+{
+  "_id": {
+    "$oid": "669825cf747acdcf345aad41"
+  },
+  "title": "Psycho",
+  "year": 1960,
+  "duration": 109,
+  "rating": 4.3,
+  "producers": [
+    {
+      "name": "Alfred",
+      "surname": "Hitchcock"
+    }
+  ],
+  "directors": [
+    {
+      "name": "Alfred",
+      "surname": "Hitchcock"
+    }
+  ],
+  "actors": [
+    {
+      "name": "Anthony",
+      "surname": "Perkins"
+    },
+    {
+      "name": "Janet",
+      "surname": "Leigh"
+    },
+    {
+      "name": "Vera",
+      "surname": "Miles"
+    }
+  ],
+  "genres": [
+    "Horror",
+    "Mystery",
+    "Thriller"
+  ]
+},
+{
+  "_id": {
+    "$oid": "669825cf747acdcf345aad42"
+  },
+  "title": "Get Out",
+  "year": 2017,
+  "duration": 104,
+  "rating": 4.2,
+  "producers": [
+    {
+      "name": "Jason",
+      "surname": "Blum"
+    },
+    {
+      "name": "Sean",
+      "surname": "McKittrick"
+    },
+    {
+      "name": "Jordan",
+      "surname": "Peele"
+    }
+  ],
+  "directors": [
+    {
+      "name": "Jordan",
+      "surname": "Peele"
+    }
+  ],
+  "actors": [
+    {
+      "name": "Daniel",
+      "surname": "Kaluuya"
+    },
+    {
+      "name": "Allison",
+      "surname": "Williams"
+    },
+    {
+      "name": "Bradley",
+      "surname": "Whitford"
+    }
+  ],
+  "genres": [
+    "Horror",
+    "Mystery",
+    "Thriller"
+  ]
+},
+{
+  "_id": {
+    "$oid": "669825cf747acdcf345aad43"
+  },
+  "title": "The Exorcist",
+  "year": 1973,
+  "duration": 122,
+  "rating": 4.3,
+  "producers": [
+    {
+      "name": "William",
+      "surname": "Peter Blatty"
+    },
+    {
+      "name": "Noel",
+      "surname": "Marshall"
+    }
+  ],
+  "directors": [
+    {
+      "name": "William",
+      "surname": "Friedkin"
+    }
+  ],
+  "actors": [
+    {
+      "name": "Ellen",
+      "surname": "Burstyn"
+    },
+    {
+      "name": "Max",
+      "surname": "von Sydow"
+    },
+    {
+      "name": "Linda",
+      "surname": "Blair"
+    }
+  ],
+  "genres": [
+    "Horror"
+  ]
+},
+{
+  "_id": {
+    "$oid": "669825cf747acdcf345aad44"
+  },
+  "title": "A Nightmare on Elm Street",
+  "year": 1984,
+  "duration": 91,
+  "rating": 4.1,
+  "producers": [
+    {
+      "name": "Robert",
+      "surname": "Shaye"
+    }
+  ],
+  "directors": [
+    {
+      "name": "Wes",
+      "surname": "Craven"
+    }
+  ],
+  "actors": [
+    {
+      "name": "Heather",
+      "surname": "Langenkamp"
+    },
+    {
+      "name": "Johnny",
+      "surname": "Depp"
+    },
+    {
+      "name": "Robert",
+      "surname": "Englund"
+    }
+  ],
+  "genres": [
+    "Horror"
+  ]
+},
+{
+  "_id": {
+    "$oid": "669825cf747acdcf345aad45"
+  },
+  "title": "The Conjuring",
+  "year": 2013,
+  "duration": 112,
+  "rating": 4.1,
+  "producers": [
+    {
+      "name": "Tony",
+      "surname": "DeRosa-Grund"
+    },
+    {
+      "name": "Peter",
+      "surname": "Safran"
+    }
+  ],
+  "directors": [
+    {
+      "name": "James",
+      "surname": "Wan"
+    }
+  ],
+  "actors": [
+    {
+      "name": "Vera",
+      "surname": "Farmiga"
+    },
+    {
+      "name": "Patrick",
+      "surname": "Wilson"
+    },
+    {
+      "name": "Lili",
+      "surname": "Taylor"
+    }
+  ],
+  "genres": [
+    "Horror",
+    "Mystery",
+    "Thriller"
+  ]
+},
+{
+  "_id": {
+    "$oid": "669825cf747acdcf345aad46"
+  },
+  "title": "Hereditary",
+  "year": 2018,
+  "duration": 127,
+  "rating": 4.2,
+  "producers": [
+    {
+      "name": "Kevin",
+      "surname": "Frakes"
+    },
+    {
+      "name": "Lars",
+      "surname": "Knudsen"
+    }
+  ],
+  "directors": [
+    {
+      "name": "Ari",
+      "surname": "Aster"
+    }
+  ],
+  "actors": [
+    {
+      "name": "Toni",
+      "surname": "Collette"
+    },
+    {
+      "name": "Alex",
+      "surname": "Wolff"
+    },
+    {
+      "name": "Milly",
+      "surname": "Shapiro"
+    }
+  ],
+  "genres": [
+    "Drama",
+    "Horror",
+    "Mystery"
+  ]
+},
+{
+  "_id": {
+    "$oid": "669825cf747acdcf345aad47"
+  },
+  "title": "It Follows",
+  "year": 2014,
+  "duration": 100,
+  "rating": 4,
+  "producers": [
+    {
+      "name": "Rebecca",
+      "surname": "Green"
+    },
+    {
+      "name": "David",
+      "surname": "Kaplan"
+    }
+  ],
+  "directors": [
+    {
+      "name": "David",
+      "surname": "Robert Mitchell"
+    }
+  ],
+  "actors": [
+    {
+      "name": "Maika",
+      "surname": "Monroe"
+    },
+    {
+      "name": "Keir",
+      "surname": "Gilchrist"
+    },
+    {
+      "name": "Olivia",
+      "surname": "Luccardi"
+    }
+  ],
+  "genres": [
+    "Horror",
+    "Mystery",
+    "Thriller"
+  ]
+},
+{
+  "_id": {
+    "$oid": "669825cf747acdcf345aad48"
+  },
+  "title": "The Babadook",
+  "year": 2014,
+  "duration": 93,
+  "rating": 4,
+  "producers": [
+    {
+      "name": "Kristina",
+      "surname": "Ceyton"
+    },
+    {
+      "name": "Kristian",
+      "surname": "Moliere"
+    }
+  ],
+  "directors": [
+    {
+      "name": "Jennifer",
+      "surname": "Kent"
+    }
+  ],
+  "actors": [
+    {
+      "name": "Essie",
+      "surname": "Davis"
+    },
+    {
+      "name": "Noah",
+      "surname": "Wiseman"
+    },
+    {
+      "name": "Daniel",
+      "surname": "Henshall"
+    }
+  ],
+  "genres": [
+    "Drama",
+    "Horror",
+    "Thriller"
+  ]
+},
+{
+  "_id": {
+    "$oid": "669825cf747acdcf345aad49"
+  },
+  "title": "The Cabin in the Woods",
+  "year": 2012,
+  "duration": 95,
+  "rating": 4,
+  "producers": [
+    {
+      "name": "Joss",
+      "surname": "Whedon"
+    },
+    {
+      "name": "Drew",
+      "surname": "Goddard"
+    }
+  ],
+  "directors": [
+    {
+      "name": "Drew",
+      "surname": "Goddard"
+    }
+  ],
+  "actors": [
+    {
+      "name": "Kristen",
+      "surname": "Connolly"
+    },
+    {
+      "name": "Chris",
+      "surname": "Hemsworth"
+    },
+    {
+      "name": "Anna",
+      "surname": "Hutchison"
+    }
+  ],
+  "genres": [
+    "Horror",
+    "Mystery",
+    "Thriller"
+  ]
+},
+{
+  "_id": {
+    "$oid": "669825cf747acdcf345aad4a"
+  },
+  "title": "The Notebook",
+  "year": 2004,
+  "duration": 123,
+  "rating": 4.5,
+  "producers": [
+    {
+      "name": "Mark",
+      "surname": "Johnson"
+    },
+    {
+      "name": "Lynn",
+      "surname": "Harris"
+    }
+  ],
+  "directors": [
+    {
+      "name": "Nick",
+      "surname": "Cassavetes"
+    }
+  ],
+  "actors": [
+    {
+      "name": "Ryan",
+      "surname": "Gosling"
+    },
+    {
+      "name": "Rachel",
+      "surname": "McAdams"
+    },
+    {
+      "name": "Gena",
+      "surname": "Rowlands"
+    }
+  ],
+  "genres": [
+    "Drama",
+    "Romance"
+  ]
+},
+{
+  "_id": {
+    "$oid": "669825cf747acdcf345aad4b"
+  },
+  "title": "Pride and Prejudice",
+  "year": 2005,
+  "duration": 129,
+  "rating": 4.4,
+  "producers": [
+    {
+      "name": "Tim",
+      "surname": "Bevan"
+    },
+    {
+      "name": "Eric",
+      "surname": "Fellner"
+    },
+    {
+      "name": "Paul",
+      "surname": "Webster"
+    }
+  ],
+  "directors": [
+    {
+      "name": "Joe",
+      "surname": "Wright"
+    }
+  ],
+  "actors": [
+    {
+      "name": "Keira",
+      "surname": "Knightley"
+    },
+    {
+      "name": "Matthew",
+      "surname": "Macfadyen"
+    },
+    {
+      "name": "Rosamund",
+      "surname": "Pike"
+    }
+  ],
+  "genres": [
+    "Drama",
+    "Romance"
+  ]
+},
+{
+  "_id": {
+    "$oid": "669825cf747acdcf345aad4c"
+  },
+  "title": "Before Sunrise",
+  "year": 1995,
+  "duration": 105,
+  "rating": 4.3,
+  "producers": [
+    {
+      "name": "Anne",
+      "surname": "Walker-McBay"
+    },
+    {
+      "name": "Karl",
+      "surname": "Baumgartner"
+    }
+  ],
+  "directors": [
+    {
+      "name": "Richard",
+      "surname": "Linklater"
+    }
+  ],
+  "actors": [
+    {
+      "name": "Ethan",
+      "surname": "Hawke"
+    },
+    {
+      "name": "Julie",
+      "surname": "Delpy"
+    }
+  ],
+  "genres": [
+    "Drama",
+    "Romance"
+  ]
+},
+{
+  "_id": {
+    "$oid": "669825cf747acdcf345aad4e"
+  },
+  "title": "500 Days of Summer",
+  "year": 2009,
+  "duration": 95,
+  "rating": 4.2,
+  "producers": [
+    {
+      "name": "Mason",
+      "surname": "Novick"
+    },
+    {
+      "name": "Jessica",
+      "surname": "Tuchinsky"
+    },
+    {
+      "name": "Mark",
+      "surname": "Waters"
+    }
+  ],
+  "directors": [
+    {
+      "name": "Marc",
+      "surname": "Webb"
+    }
+  ],
+  "actors": [
+    {
+      "name": "Joseph",
+      "surname": "Gordon-Levitt"
+    },
+    {
+      "name": "Zooey",
+      "surname": "Deschanel"
+    },
+    {
+      "name": "Geoffrey",
+      "surname": "Arend"
+    }
+  ],
+  "genres": [
+    "Comedy",
+    "Drama",
+    "Romance"
+  ]
+},
+{
+  "_id": {
+    "$oid": "669825cf747acdcf345aad4f"
+  },
+  "title": "Atonement",
+  "year": 2007,
+  "duration": 123,
+  "rating": 4.4,
+  "producers": [
+    {
+      "name": "Tim",
+      "surname": "Bevan"
+    },
+    {
+      "name": "Eric",
+      "surname": "Fellner"
+    },
+    {
+      "name": "Paul",
+      "surname": "Webster"
+    }
+  ],
+  "directors": [
+    {
+      "name": "Joe",
+      "surname": "Wright"
+    }
+  ],
+  "actors": [
+    {
+      "name": "Keira",
+      "surname": "Knightley"
+    },
+    {
+      "name": "James",
+      "surname": "McAvoy"
+    },
+    {
+      "name": "Saoirse",
+      "surname": "Ronan"
+    }
+  ],
+  "genres": [
+    "Drama",
+    "Mystery",
+    "Romance"
+  ]
+},
+{
+  "_id": {
+    "$oid": "669825cf747acdcf345aad50"
+  },
+  "title": "The Fault in Our Stars",
+  "year": 2014,
+  "duration": 126,
+  "rating": 4.3,
+  "producers": [
+    {
+      "name": "Wyck",
+      "surname": "Godfrey"
+    },
+    {
+      "name": "Marty",
+      "surname": "Bowen"
+    }
+  ],
+  "directors": [
+    {
+      "name": "Josh",
+      "surname": "Boone"
+    }
+  ],
+  "actors": [
+    {
+      "name": "Shailene",
+      "surname": "Woodley"
+    },
+    {
+      "name": "Ansel",
+      "surname": "Elgort"
+    },
+    {
+      "name": "Nat",
+      "surname": "Wolff"
+    }
+  ],
+  "genres": [
+    "Drama",
+    "Romance"
+  ]
+},
+{
+  "_id": {
+    "$oid": "669825cf747acdcf345aad51"
+  },
+  "title": "Silver Linings Playbook",
+  "year": 2012,
+  "duration": 122,
+  "rating": 4.3,
+  "producers": [
+    {
+      "name": "Bruce",
+      "surname": "Cohen"
+    },
+    {
+      "name": "Donna",
+      "surname": "Gigliotti"
+    },
+    {
+      "name": "Jonathan",
+      "surname": "Gordon"
+    }
+  ],
+  "directors": [
+    {
+      "name": "David",
+      "surname": "O. Russell"
+    }
+  ],
+  "actors": [
+    {
+      "name": "Bradley",
+      "surname": "Cooper"
+    },
+    {
+      "name": "Jennifer",
+      "surname": "Lawrence"
+    },
+    {
+      "name": "Robert",
+      "surname": "De Niro"
+    }
+  ],
+  "genres": [
+    "Comedy",
+    "Drama",
+    "Romance"
+  ]
+},
+{
+  "_id": {
+    "$oid": "669825cf747acdcf345aad52"
+  },
+  "title": "Blade Runner",
+  "year": 1982,
+  "duration": 117,
+  "rating": 4.4,
+  "producers": [
+    {
+      "name": "Michael",
+      "surname": "Deeley"
+    },
+    {
+      "name": "Ridley",
+      "surname": "Scott"
+    }
+  ],
+  "directors": [
+    {
+      "name": "Ridley",
+      "surname": "Scott"
+    }
+  ],
+  "actors": [
+    {
+      "name": "Harrison",
+      "surname": "Ford"
+    },
+    {
+      "name": "Rutger",
+      "surname": "Hauer"
+    },
+    {
+      "name": "Sean",
+      "surname": "Young"
+    }
+  ],
+  "genres": [
+    "Sci-Fi",
+    "Thriller"
+  ]
+},
+{
+  "_id": {
+    "$oid": "669825cf747acdcf345aad53"
+  },
+  "title": "The Fifth Element",
+  "year": 1997,
+  "duration": 126,
+  "rating": 4.3,
+  "producers": [
+    {
+      "name": "Patrice",
+      "surname": "Ledoux"
+    },
+    {
+      "name": "Luc",
+      "surname": "Besson"
+    }
+  ],
+  "directors": [
+    {
+      "name": "Luc",
+      "surname": "Besson"
+    }
+  ],
+  "actors": [
+    {
+      "name": "Bruce",
+      "surname": "Willis"
+    },
+    {
+      "name": "Milla",
+      "surname": "Jovovich"
+    },
+    {
+      "name": "Gary",
+      "surname": "Oldman"
+    }
+  ],
+  "genres": [
+    "Action",
+    "Adventure",
+    "Sci-Fi"
+  ]
+},
+{
+  "_id": {
+    "$oid": "669825cf747acdcf345aad54"
+  },
+  "title": "Minority Report",
+  "year": 2002,
+  "duration": 145,
+  "rating": 4.3,
+  "producers": [
+    {
+      "name": "Jan",
+      "surname": "De Bont"
+    },
+    {
+      "name": "Walter",
+      "surname": "F. Parkes"
+    }
+  ],
+  "directors": [
+    {
+      "name": "Steven",
+      "surname": "Spielberg"
+    }
+  ],
+  "actors": [
+    {
+      "name": "Tom",
+      "surname": "Cruise"
+    },
+    {
+      "name": "Colin",
+      "surname": "Farrell"
+    },
+    {
+      "name": "Samantha",
+      "surname": "Morton"
+    }
+  ],
+  "genres": [
+    "Action",
+    "Crime",
+    "Mystery",
+    "Sci-Fi",
+    "Thriller"
+  ]
+},
+{
+  "_id": {
+    "$oid": "669825cf747acdcf345aad55"
+  },
+  "title": "District 9",
+  "year": 2009,
+  "duration": 112,
+  "rating": 4.2,
+  "producers": [
+    {
+      "name": "Peter",
+      "surname": "Jackson"
+    },
+    {
+      "name": "Carolynne",
+      "surname": "Cunningham"
+    }
+  ],
+  "directors": [
+    {
+      "name": "Neill",
+      "surname": "Blomkamp"
+    }
+  ],
+  "actors": [
+    {
+      "name": "Sharlto",
+      "surname": "Copley"
+    },
+    {
+      "name": "Jason",
+      "surname": "Cope"
+    },
+    {
+      "name": "Nathalie",
+      "surname": "Boltt"
+    }
+  ],
+  "genres": [
+    "Action",
+    "Sci-Fi",
+    "Thriller"
+  ]
+},
+{
+  "_id": {
+    "$oid": "669825cf747acdcf345aad56"
+  },
+  "title": "Star Wars: Episode IV - A New Hope",
+  "year": 1977,
+  "duration": 121,
+  "rating": 4.4,
+  "producers": [
+    {
+      "name": "Gary",
+      "surname": "Kurtz"
+    }
+  ],
+  "directors": [
+    {
+      "name": "George",
+      "surname": "Lucas"
+    }
+  ],
+  "actors": [
+    {
+      "name": "Mark",
+      "surname": "Hamill"
+    },
+    {
+      "name": "Harrison",
+      "surname": "Ford"
+    },
+    {
+      "name": "Carrie",
+      "surname": "Fisher"
+    }
+  ],
+  "genres": [
+    "Action",
+    "Adventure",
+    "Fantasy",
+    "Sci-Fi"
+  ]
+},
+{
+  "_id": {
+    "$oid": "669825cf747acdcf345aad57"
+  },
+  "title": "The Martian",
+  "year": 2015,
+  "duration": 144,
+  "rating": 4.4,
+  "producers": [
+    {
+      "name": "Simon",
+      "surname": "Kinberg"
+    },
+    {
+      "name": "Ridley",
+      "surname": "Scott"
+    }
+  ],
+  "directors": [
+    {
+      "name": "Ridley",
+      "surname": "Scott"
+    }
+  ],
+  "actors": [
+    {
+      "name": "Matt",
+      "surname": "Damon"
+    },
+    {
+      "name": "Jessica",
+      "surname": "Chastain"
+    },
+    {
+      "name": "Kristen",
+      "surname": "Wiig"
+    }
+  ],
+  "genres": [
+    "Adventure",
+    "Drama",
+    "Sci-Fi"
+  ]
+},
+{
+  "_id": {
+    "$oid": "669825cf747acdcf345aad58"
+  },
+  "title": "The Good, the Bad and the Ugly",
+  "year": 1966,
+  "duration": 178,
+  "rating": 4.5,
+  "producers": [
+    {
+      "name": "Alberto",
+      "surname": "Grimaldi"
+    }
+  ],
+  "directors": [
+    {
+      "name": "Sergio",
+      "surname": "Leone"
+    }
+  ],
+  "actors": [
+    {
+      "name": "Clint",
+      "surname": "Eastwood"
+    },
+    {
+      "name": "Eli",
+      "surname": "Wallach"
+    },
+    {
+      "name": "Lee",
+      "surname": "Van Cleef"
+    }
+  ],
+  "genres": [
+    "Western"
+  ]
+},
+{
+  "_id": {
+    "$oid": "669825cf747acdcf345aad59"
+  },
+  "title": "Unforgiven",
+  "year": 1992,
+  "duration": 131,
+  "rating": 4.5,
+  "producers": [
+    {
+      "name": "Clint",
+      "surname": "Eastwood"
+    },
+    {
+      "name": "David",
+      "surname": "Valdes"
+    }
+  ],
+  "directors": [
+    {
+      "name": "Clint",
+      "surname": "Eastwood"
+    }
+  ],
+  "actors": [
+    {
+      "name": "Clint",
+      "surname": "Eastwood"
+    },
+    {
+      "name": "Gene",
+      "surname": "Hackman"
+    },
+    {
+      "name": "Morgan",
+      "surname": "Freeman"
+    }
+  ],
+  "genres": [
+    "Western"
+  ]
+},
+{
+  "_id": {
+    "$oid": "669825cf747acdcf345aad5a"
+  },
+  "title": "Once Upon a Time in the West",
+  "year": 1968,
+  "duration": 165,
+  "rating": 4.5,
+  "producers": [
+    {
+      "name": "Bino",
+      "surname": "Cerami"
+    },
+    {
+      "name": "Fulvio",
+      "surname": "Morsella"
+    }
+  ],
+  "directors": [
+    {
+      "name": "Sergio",
+      "surname": "Leone"
+    }
+  ],
+  "actors": [
+    {
+      "name": "Henry",
+      "surname": "Fonda"
+    },
+    {
+      "name": "Charles",
+      "surname": "Bronson"
+    },
+    {
+      "name": "Claudia",
+      "surname": "Cardinale"
+    }
+  ],
+  "genres": [
+    "Western"
+  ]
+},
+{
+  "_id": {
+    "$oid": "669825cf747acdcf345aad5b"
+  },
+  "title": "True Grit",
+  "year": 2010,
+  "duration": 110,
+  "rating": 4.3,
+  "producers": [
+    {
+      "name": "Ethan",
+      "surname": "Coen"
+    },
+    {
+      "name": "Joel",
+      "surname": "Coen"
+    },
+    {
+      "name": "Scott",
+      "surname": "Rudin"
+    }
+  ],
+  "directors": [
+    {
+      "name": "Ethan",
+      "surname": "Coen"
+    },
+    {
+      "name": "Joel",
+      "surname": "Coen"
+    }
+  ],
+  "actors": [
+    {
+      "name": "Jeff",
+      "surname": "Bridges"
+    },
+    {
+      "name": "Matt",
+      "surname": "Damon"
+    },
+    {
+      "name": "Hailee",
+      "surname": "Steinfeld"
+    }
+  ],
+  "genres": [
+    "Adventure",
+    "Drama",
+    "Western"
+  ]
+},
+{
+  "_id": {
+    "$oid": "669825cf747acdcf345aad5c"
+  },
+  "title": "The Magnificent Seven",
+  "year": 1960,
+  "duration": 128,
+  "rating": 4.4,
+  "producers": [
+    {
+      "name": "John",
+      "surname": "Sturges"
+    }
+  ],
+  "directors": [
+    {
+      "name": "John",
+      "surname": "Sturges"
+    }
+  ],
+  "actors": [
+    {
+      "name": "Yul",
+      "surname": "Brynner"
+    },
+    {
+      "name": "Steve",
+      "surname": "McQueen"
+    },
+    {
+      "name": "Charles",
+      "surname": "Bronson"
+    }
+  ],
+  "genres": [
+    "Action",
+    "Adventure",
+    "Western"
+  ]
+},
+{
+  "_id": {
+    "$oid": "669825cf747acdcf345aad5d"
+  },
+  "title": "High Noon",
+  "year": 1952,
+  "duration": 85,
+  "rating": 4.3,
+  "producers": [
+    {
+      "name": "Stanley",
+      "surname": "Kramer"
+    }
+  ],
+  "directors": [
+    {
+      "name": "Fred",
+      "surname": "Zinnemann"
+    }
+  ],
+  "actors": [
+    {
+      "name": "Gary",
+      "surname": "Cooper"
+    },
+    {
+      "name": "Grace",
+      "surname": "Kelly"
+    },
+    {
+      "name": "Thomas",
+      "surname": "Mitchell"
+    }
+  ],
+  "genres": [
+    "Drama",
+    "Thriller",
+    "Western"
+  ]
+},
+{
+  "_id": {
+    "$oid": "669825cf747acdcf345aad5e"
+  },
+  "title": "Butch Cassidy and the Sundance Kid",
+  "year": 1969,
+  "duration": 110,
+  "rating": 4.4,
+  "producers": [
+    {
+      "name": "John",
+      "surname": "Foreman"
+    }
+  ],
+  "directors": [
+    {
+      "name": "George",
+      "surname": "Roy Hill"
+    }
+  ],
+  "actors": [
+    {
+      "name": "Paul",
+      "surname": "Newman"
+    },
+    {
+      "name": "Robert",
+      "surname": "Redford"
+    },
+    {
+      "name": "Katharine",
+      "surname": "Ross"
+    }
+  ],
+  "genres": [
+    "Biography",
+    "Crime",
+    "Drama",
+    "Western"
+  ]
+},
+{
+  "_id": {
+    "$oid": "669825cf747acdcf345aad5f"
+  },
+  "title": "Once Upon a Time in America",
+  "year": 1984,
+  "duration": 229,
+  "rating": 4.5,
+  "producers": [
+    {
+      "name": "Arnon",
+      "surname": "Milchan"
+    },
+    {
+      "name": "Robert",
+      "surname": "De Niro"
+    }
+  ],
+  "directors": [
+    {
+      "name": "Sergio",
+      "surname": "Leone"
+    }
+  ],
+  "actors": [
+    {
+      "name": "Robert",
+      "surname": "De Niro"
+    },
+    {
+      "name": "James",
+      "surname": "Woods"
+    },
+    {
+      "name": "Elizabeth",
+      "surname": "McGovern"
+    }
+  ],
+  "genres": [
+    "Crime",
+    "Drama",
+    "Western"
+  ]
+},
+{
+  "_id": {
+    "$oid": "669825cf747acdcf345aad60"
+  },
+  "title": "Tombstone",
+  "year": 1993,
+  "duration": 130,
+  "rating": 4.3,
+  "producers": [
+    {
+      "name": "James",
+      "surname": "Jack"
+    },
+    {
+      "name": "Sean",
+      "surname": "Daniel"
+    }
+  ],
+  "directors": [
+    {
+      "name": "George",
+      "surname": "P. Cosmatos"
+    }
+  ],
+  "actors": [
+    {
+      "name": "Kurt",
+      "surname": "Russell"
+    },
+    {
+      "name": "Val",
+      "surname": "Kilmer"
+    },
+    {
+      "name": "Sam",
+      "surname": "Elliott"
+    }
+  ],
+  "genres": [
+    "Action",
+    "Biography",
+    "Drama",
+    "History",
+    "Western"
+  ]
+},
+{
+  "_id": {
+    "$oid": "6698280c747acdcf345aad6d"
+  },
+  "title": "Ip Man",
+  "year": 2008,
+  "duration": 105,
+  "rating": 4.4,
+  "producers": [
+    {
+      "name": "Raymond",
+      "surname": "Wong"
+    }
+  ],
+  "directors": [
+    {
+      "name": "Wilson",
+      "surname": "Yip"
+    }
+  ],
+  "actors": [
+    {
+      "name": "Donnie",
+      "surname": "Yen"
+    },
+    {
+      "name": "Simon",
+      "surname": "Yam"
+    },
+    {
+      "name": "Siu-Wong",
+      "surname": "Fan"
+    }
+  ],
+  "genres": [
+    "Action",
+    "Biopic",
+    "Martial Arts"
+  ]
+}]

@@ -8,7 +8,6 @@ import connectDB from "./connectionMongoDb.js";
 const app = express();
 const portHost = config.HOST;
 
-
 //Connect MongoDB
 connectDB();
 
@@ -24,7 +23,7 @@ app.post('/', (request, response) => {
 });
 
 app.get('/', (request, response) => {
-    response.send('movies');
+    response.send('I love movies');
 });
 
 //Start serveur

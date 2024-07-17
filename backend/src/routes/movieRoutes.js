@@ -1,10 +1,8 @@
 import express from "express";
-import {movieGetOne,movieGetAll} from "../controllers/movieController.js";
+import {movieGetOne, movieGetAll} from "../controllers/movieController.js";
 const router = express.Router();
 
-
-router.get('/movies/GetOne/',movieGetOne);
-router.get('/movies/GetAll/',movieGetAll);
-
+router.get('/movies/getOne/',movieGetOne);
+router.get('/movies/getAll/',movieGetAll);
 
 export default router;
