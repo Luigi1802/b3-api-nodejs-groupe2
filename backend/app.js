@@ -1,7 +1,7 @@
 import express from "express";
 import bodyParser from "body-parser";
 import cors from "cors";
-import router from "./src/routes/movieRoute.js";
+import router from "./src/routes/movieRoutes.js";
 import config from './config.json' assert {type: 'json'};
 import connectDB from "./connectionMongoDb.js";
 

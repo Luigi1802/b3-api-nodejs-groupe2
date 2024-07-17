@@ -1,26 +1,66 @@
-import {Schema, model, Document, ObjectId} from "mongoose";
+import mongoose from 'mongoose';
 
-import mongoose from "mongoose";
+const { Schema } = mongoose;
 
-const movie = new mongoose.Schema({
+const ProducerSchema = new Schema({
+    name: {
+        type: String,
+        required: true
+    },
+    surname: {
+        type: String,
+        required: true
+    }
+}, { _id: false });
+
+const DirectorSchema = new Schema({
+    name: {
+        type: String,
+        required: true
+    },
+    surname: {
+        type: String,
+        required: true
+    }
+}, { _id: false });
+
+const ActorSchema = new Schema({
+    name: {
+        type: String,
+        required: true
+    },
+    surname: {
+        type: String,
+        required: true
+    }
+}, { _id: false });
+
+const MovieSchema = new Schema({
     title: {
         type: String,
-        required: true,
+        required: true
     },
     year: {
-        type: Date,
-        required: true,
-    },
-    rate: {
         type: Number,
-        required: true,
+        required: true
     },
-    actors: {
+    duration: {
+        type: Number,
+        required: true
+    },
+    rating: {
+        type: Number,
+        required: true
+    },
+    producers: [ProducerSchema],
+    directors: [DirectorSchema],
+    actors: [ActorSchema],
+    genres: {
         type: [String],
-        required:true,
+        required: true
     }
-})
+});
 
-const Movie = mongoose.model('Movie',movie,'movies');
+const Movie = mongoose.model('Movie', MovieSchema,'Movie');
 
 export default Movie;
