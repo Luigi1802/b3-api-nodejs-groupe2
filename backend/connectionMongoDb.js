@@ -1,5 +1,5 @@
-const mongoose = require('mongoose');
-const config = require('./config'); // Make sure this file exports MONGODB_URL
+import mongoose from "mongoose";
+import config from './config.json' assert { type: 'json' };
 
 const connectDB = async () => {
     try {
@@ -9,5 +9,4 @@ const connectDB = async () => {
         console.error('MongoDB connection error:', error);
     }
 };
-
-module.exports = connectDB;
+export default connectDB;

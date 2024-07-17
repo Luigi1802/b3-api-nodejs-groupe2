@@ -1,6 +1,8 @@
-const express = require('express');
-
+import express from "express";
+import movieGetOne from "../controllers/movieController.js";
 const router = express.Router();
 
 
-module.exports = router;
+router.get('/movie/GetOne/:title',movieGetOne)
+
+export default router;

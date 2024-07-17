@@ -1,6 +1,6 @@
-import {Schema, model, Document, ObjectId} from 'mongoose';
+import {Schema, model, Document, ObjectId} from "mongoose";
 
-const mongoose = require('mongoose');
+import mongoose from "mongoose";
 
 const movie = new mongoose.Schema({
     title: {
@@ -23,4 +23,4 @@ const movie = new mongoose.Schema({
 
 const Movie = mongoose.model('Movie',movie,'movies');
 
-module.exports = Movie;
+export default Movie;

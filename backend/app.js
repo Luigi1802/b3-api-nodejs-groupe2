@@ -1,35 +1,33 @@
-const express = require('express');
-const bodyParser = require('body-parser');
-const cors = require('cors');
-const movie = require('./src/routes/movieRoute');
-const config = require('./config.json');
-const connectDB = require('./connectionMongoDb');
+import express from "express";
+import bodyParser from "body-parser";
+import cors from "cors";
+import router from "./src/routes/movieRoute.js";
+import config from './config.json' assert {type: 'json'};
+import connectDB from "./connectionMongoDb.js";
 
 const app = express();
 const portHost = config.HOST;
-const API_URL = config.API;
 
-// Connect to MongoDB
+
+//Connect MongoDB
 connectDB();
 
-// Middlewaresnpms
 app.use(cors());
 app.use(bodyParser.json());
 app.use(express.json());
 
-// Routes
-app.use(movie);
+//Routes
+app.use(router);
 
 app.post('/', (request, response) => {
     response.send(request.body);
 });
 
 app.get('/', (request, response) => {
-    response.send('medical');
+    response.send('movies');
 });
 
-// Start the server
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-    console.log(`Server is running on port ${PORT}`);
+//Start serveur
+app.listen(portHost, () => {
+    console.log(`Server is running on port ${portHost}`);
 });
