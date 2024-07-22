@@ -4,7 +4,11 @@ const movieGetOne = async (request, response, next)=>{
     try {
         const title = request.query.title;
         const result = await Movie.find({title:title});
-        return response.status(200).send(result);
+        if (result.length > 0) {
+            return response.status(200).send(result);
+        } else {
+            return response.status(204).send(result);
+        }
     }catch (err){
         return response.status(500).send("Erreur serveur")
     }
@@ -13,7 +17,11 @@ const movieGetOne = async (request, response, next)=>{
 const movieGetAll = async (request, response, next)=>{
     try {
         const result = await Movie.find({});
-        return response.status(200).send(result);
+        if (result.length > 0) {
+            return response.status(200).send(result);
+        } else {
+            return response.status(204).send(result);
+        }
     }catch (err){
         return response.status(500).send("Erreur serveur")
     }
