@@ -3,7 +3,7 @@ import bodyParser from "body-parser";
 import cors from "cors";
 import router from "./src/routes/movieRoutes.js";
 import config from './config.json' assert {type: 'json'};
-import connectDB from "./connectionMongoDb.js";
+import connectDB from "./mongoDbConnexion.js";
 
 const app = express();
 const portHost = config.HOST;
