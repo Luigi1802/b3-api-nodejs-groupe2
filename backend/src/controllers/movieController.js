@@ -1,49 +1,70 @@
+// Import du model Movie
 import Movie from "../models/movieModel.js";
 
+// Récupération d'un film par son id
 const movieGetOne = async (request, response, next)=>{
+    const movieId = request.query.id;
+
+    // Vérification qu'un id est passé dans la requête
+    if (!movieId) {
+        return response.status(400).json({message:"Movie id is required."})
+    }
+
     try {
-        const movieId = request.query.id;
         const result = await Movie.find({_id:movieId});
         if (result.length > 0) {
             return response.status(200).send(result);
         } else {
-            return response.status(204).send(result);
+            // Si aucun film n'est trouvé, erreur 404
+            return response.status(404).send(result);
         }
     }catch (err){
-        return response.status(500).send("Erreur serveur")
+        return response.status(500).json({message:"Unexpected error, please contact an admnistrator."})
     }
 }
 
+// Récupération de tous les films en BDD
 const movieGetAll = async (request, response, next)=>{
     try {
         const result = await Movie.find({});
         if (result.length > 0) {
             return response.status(200).send(result);
         } else {
+            // Si aucun film n'est présent, erreur 204
             return response.status(204).send(result);
         }
     }catch (err){
-        return response.status(500).send("Erreur serveur")
+        return response.status(500).json({message:"Unexpected error, please contact an admnistrator."})
     }
 }
 
+// Recherche d'un film à partir d'un titre, d'une année de sortie et/ou d'un genre
 const movieSearch = async (request, response, next)=>{
+    const {title, year, genre} = request.query;
+
+    // Si aucun des paramètres de recherche n'est donné, erreur 400
+    if (!title && !year && !genre) {
+        return response.status(400).json({message:"At least one query parameter (between title, year, or genre) is required."});
+    }
+
     try {
-        const {title, year, genre} = request.query;
-        
+        // Formation d'une query mongoDB en fonction des paramètres de recherche fournis ou non
         let searchObject = {};
         if (title) {searchObject.title = {$regex: new RegExp(title), $options: 'i'}}
         if (year) {searchObject.year = year;}
         if (genre) {searchObject.genres = genre;}
-        
+
+        // Récupération du résultat de la recherche
         const result = await Movie.find(searchObject);
+
         if (result.length > 0) {
             return response.status(200).send(result);
         } else {
+            // Si la liste des résultats est vide, erreur 204
             return response.status(204).send(result);
         }
     }catch (err){
-        return response.status(500).send("Erreur serveur")
+        return response.status(500).json({message:"Unexpected error, please contact an admnistrator."})
     }
 }
 

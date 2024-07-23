@@ -6,14 +6,14 @@ import {userPatch,
     userPostWatchlist,
     userGetAllHistory,
     userPatchDeleteAccount} from "../controllers/userController.js";
-import checkTokenValid from "../middleWares/validationToken.js";
-import userAut from "../controllers/userAut.js";
 import userRegister from "../controllers/userRegister.js";
+import checkTokenValid from "../middlewares/validationToken.js";
+import userAuth from "../controllers/userAuth.js";
 const userRouter = express.Router();
 
 userRouter.post('/user/register',userRegister)
 
-userRouter.post('/user/login', userAut)
+userRouter.post('/user/login', userAuth)
 
 userRouter.patch('/user/',checkTokenValid, userPatch);
 userRouter.post('/user/favorites/', userPostFavorites);
