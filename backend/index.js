@@ -1,7 +1,7 @@
 import express from "express";
 import bodyParser from "body-parser";
 import cors from "cors";
-import router from "./src/routes/movieRoutes.js";
+import movieRouter from "./src/routes/movieRoutes.js";
 import config from './config.json' assert {type: 'json'};
 import connectDB from "./mongoDbConnexion.js";
 
@@ -16,7 +16,7 @@ app.use(bodyParser.json());
 app.use(express.json());
 
 //Routes
-app.use(router);
+app.use(movieRouter);
 
 app.post('/', (request, response) => {
     response.send(request.body);
