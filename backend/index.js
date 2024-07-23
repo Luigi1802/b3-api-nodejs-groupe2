@@ -7,6 +7,7 @@ import connectDB from "./mongoDbConnexion.js";
 import swaggerUi from "swagger-ui-express";
 
 
+
 const app = express();
 const portHost = config.HOST;
 
@@ -16,7 +17,7 @@ connectDB();
 app.use(cors());
 app.use(bodyParser.json());
 app.use(express.json());
-app.use('/doc', swaggerUi.serve, swaggerUi.setup('./swagger.json'))
+app.use('/swagger', swaggerUi.serve, swaggerUi.setup("./swagger.json"))
 
 //Routes
 app.use(router);

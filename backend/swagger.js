@@ -2,24 +2,10 @@ import swaggerAutogen from 'swagger-autogen';
 
 const doc = {
     info: {
-        version: '',            // by default: '1.0.0'
-        title: '',              // by default: 'REST API'
-        description: ''         // by default: ''
+        title: 'My API',
+        description: 'Description'
     },
-    host: '5002',                 // by default: 'localhost:3000'
-    basePath: '',             // by default: '/'
-    schemes: [],              // by default: ['http']
-    consumes: [],             // by default: ['application/json']
-    produces: [],             // by default: ['application/json']
-    tags: [                   // by default: empty Array
-        {
-            name: '',             // Tag name
-            description: ''       // Tag description
-        },
-        // { ... }
-    ],
-    securityDefinitions: {},  // by default: empty object
-    definitions: {}           // by default: empty object
+    host: 'localhost:3000'
 };
 
 const outputFile = './swagger.json';
@@ -29,4 +15,4 @@ const routes = ['./src/routes/movieRoutes.js'];
 root file where the route starts, such as index.js, app.js, routes.js, etc ... */
 
 
-swaggerAutogen({openapi: '3.0.0'})(outputFile, routes, doc);
+swaggerAutogen({openapi: '3.1.0'})(outputFile, routes, doc);
