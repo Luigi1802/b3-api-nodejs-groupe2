@@ -18,7 +18,7 @@ const movieUpdate = async (request, response, next)=>{
     const movieData = request.body;
 
     if (!movieId) {
-        return response.status(404).send(`Movie id is required.`);
+        return response.status(400).send(`Movie id is required.`);
     }
 
     try {
@@ -40,7 +40,7 @@ const movieDelete = async (request, response, next)=>{
     const movieId = request.query.id; 
 
     if (!movieId) {
-        return response.status(404).send(`Movie id is required.`);
+        return response.status(400).send(`Movie id is required.`);
     }
 
     try {

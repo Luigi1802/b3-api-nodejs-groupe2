@@ -1,8 +1,13 @@
 import Movie from "../models/movieModel.js";
 
 const movieGetOne = async (request, response, next)=>{
+    const movieId = request.query.id;
+
+    if (!movieId) {
+        return response.status(400).send("Movie id is required.");
+    }
+
     try {
-        const movieId = request.query.id;
         const result = await Movie.find({_id:movieId});
         if (result.length > 0) {
             return response.status(200).send(result);
@@ -10,7 +15,7 @@ const movieGetOne = async (request, response, next)=>{
             return response.status(204).send(result);
         }
     }catch (err){
-        return response.status(500).send("Erreur serveur")
+        return response.status(500).send("Unexpected error, please contact an admnistrator.")
     }
 }
 
@@ -23,14 +28,18 @@ const movieGetAll = async (request, response, next)=>{
             return response.status(204).send(result);
         }
     }catch (err){
-        return response.status(500).send("Erreur serveur")
+        return response.status(500).send("Unexpected error, please contact an admnistrator.")
     }
 }
 
 const movieSearch = async (request, response, next)=>{
+    const {title, year, genre} = request.query;
+
+    if (!title && !year && !genre) {
+        return response.status(400).send("At least one query parameter (between title, year, or genre) is required.");
+    }
+
     try {
-        const {title, year, genre} = request.query;
-        
         let searchObject = {};
         if (title) {searchObject.title = {$regex: new RegExp(title), $options: 'i'}}
         if (year) {searchObject.year = year;}
@@ -43,7 +52,7 @@ const movieSearch = async (request, response, next)=>{
             return response.status(204).send(result);
         }
     }catch (err){
-        return response.status(500).send("Erreur serveur")
+        return response.status(500).send("Unexpected error, please contact an admnistrator.")
     }
 }
 
