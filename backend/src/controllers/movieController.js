@@ -4,7 +4,7 @@ const movieGetOne = async (request, response, next)=>{
     const movieId = request.query.id;
 
     if (!movieId) {
-        return response.status(400).send("Movie id is required.");
+        return response.status(400).json({message:"Movie id is required."})
     }
 
     try {
@@ -15,7 +15,7 @@ const movieGetOne = async (request, response, next)=>{
             return response.status(204).send(result);
         }
     }catch (err){
-        return response.status(500).send("Unexpected error, please contact an admnistrator.")
+        return response.status(500).json({message:"Unexpected error, please contact an admnistrator."})
     }
 }
 
@@ -28,7 +28,7 @@ const movieGetAll = async (request, response, next)=>{
             return response.status(204).send(result);
         }
     }catch (err){
-        return response.status(500).send("Unexpected error, please contact an admnistrator.")
+        return response.status(500).json({message:"Unexpected error, please contact an admnistrator."})
     }
 }
 
@@ -36,7 +36,7 @@ const movieSearch = async (request, response, next)=>{
     const {title, year, genre} = request.query;
 
     if (!title && !year && !genre) {
-        return response.status(400).send("At least one query parameter (between title, year, or genre) is required.");
+        return response.status(400).json({message:"At least one query parameter (between title, year, or genre) is required."});
     }
 
     try {
@@ -52,7 +52,7 @@ const movieSearch = async (request, response, next)=>{
             return response.status(204).send(result);
         }
     }catch (err){
-        return response.status(500).send("Unexpected error, please contact an admnistrator.")
+        return response.status(500).json({message:"Unexpected error, please contact an admnistrator."})
     }
 }
 

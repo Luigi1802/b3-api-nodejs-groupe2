@@ -9,7 +9,7 @@ const movieAdd = async (request, response, next)=>{
         if (err.name === "ValidationError") {
             return response.status(400).send(err.message);
         }
-        return response.status(500).send("Unexpected error, please contact an admnistrator.");
+        return response.status(500).json({message:"Unexpected error, please contact an admnistrator."})
     }
 }
 
@@ -18,13 +18,13 @@ const movieUpdate = async (request, response, next)=>{
     const movieData = request.body;
 
     if (!movieId) {
-        return response.status(400).send(`Movie id is required.`);
+        return response.status(400).json({message:"Movie id is required."});
     }
 
     try {
         const updatedMovie = await Movie.findByIdAndUpdate(movieId, movieData, {new:true});
         if (!updatedMovie) {
-            response.status(404).send(`Movie ${movieId} not found.`)
+            response.status(404).json({message:`Movie ${movieId} not found.`})
         }
         return response.status(200).send(updatedMovie);
     }catch (err){
@@ -32,7 +32,7 @@ const movieUpdate = async (request, response, next)=>{
         if (err.name === "CastError") {
             return response.status(400).send(err.message);
         }
-        return response.status(500).send("Unexpected error, please contact an admnistrator.");
+        return response.status(500).json({message:"Unexpected error, please contact an admnistrator."})
     }
 }
 
@@ -40,17 +40,17 @@ const movieDelete = async (request, response, next)=>{
     const movieId = request.query.id; 
 
     if (!movieId) {
-        return response.status(400).send(`Movie id is required.`);
+        return response.status(400).json({message:"Movie id is required."});
     }
 
     try {
         const deletedMovie = await Movie.findByIdAndDelete(movieId);
         if (!deletedMovie) {
-            response.status(404).send(`Movie ${movieId} not found.`)
+            response.status(404).json({message:`Movie ${movieId} not found.`})
         }
         return response.status(200).send(deletedMovie);
     }catch (err){
-        return response.status(500).send("Unexpected error, please contact an admnistrator.");
+        return response.status(500).json({message:"Unexpected error, please contact an admnistrator."})
     }
 }
 
