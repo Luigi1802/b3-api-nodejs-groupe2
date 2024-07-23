@@ -29,9 +29,7 @@ const movieGetAll = async (request, response, next)=>{
 
 const movieSearch = async (request, response, next)=>{
     try {
-        const title = request.query.title;
-        const year = request.query.year;
-        const genre = request.query.genre;
+        const {title, year, genre} = request.query;
         
         let searchObject = {};
         if (title) {searchObject.title = {$regex: new RegExp(title), $options: 'i'}}
