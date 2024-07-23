@@ -1,0 +1,9 @@
+[{
+  "_id": {
+    "$oid": "669f54b85905df6054376b43"
+  },
+  "email": "nolan@movies.fr",
+  "password": "$2y$10$6gO9q9rj//rTVdiovxHdO.a/CaEZczHTslZzs5n2J6jC9wBb5wFwe",
+  "name": "Christopher",
+  "surname": "NOLAN"
+}]

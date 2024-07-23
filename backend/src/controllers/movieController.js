@@ -2,8 +2,8 @@ import Movie from "../models/movieModel.js";
 
 const movieGetOne = async (request, response, next)=>{
     try {
-        const title = request.query.title;
-        const result = await Movie.find({title:title});
+        const movieId = request.query.id;
+        const result = await Movie.find({_id:movieId});
         if (result.length > 0) {
             return response.status(200).send(result);
         } else {

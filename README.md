@@ -1,10 +1,47 @@
 # b3-api-nodejs-groupe2
 
 ## Routes
+### Routes publiques
 
-**GET** `/movies/getOne/[titre]`
+**POST** `/register/`
+
+**POST** `/login/`
 
 **GET** `/movies/getAll/`
+
+**GET** `/movies/getOne?id={id du film}`
+
+**GET** `/movies/search?title={titre du film}&genre={genre du film}&year={année de sortie}`
+
+> Chaque paramètre de la route est indépendant
+
+### Routes privées (utilisateur)
+
+**PATCH** `/user/`
+
+**POST** `/user/favorites/`
+
+**GET** `/user/favorites/`
+
+**DELETE** `/user/favorites?id={id du film}`
+
+**POST** `/user/watchlist/`
+
+**GET** `/user/history/`
+
+**PATCH** `/user/deleteAccount/`
+
+### Routes privées (admin)
+
+**POST** `/admin/movies/`
+
+**PATCH** `/admin/movies?id={id du film}`
+
+**DELETE** `/admin/movies?id={id du film}`
+
+**GET** `/admin/users/getAll`
+
+**GET** `/admin/users/getOne`
 
 ## Données
 
