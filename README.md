@@ -4,12 +4,16 @@
 ### Routes publiques
 
 **POST** `/register/`
+
 **POST** `/login/`
 
 **GET** `/movies/getAll/`
+
 **GET** `/movies/getOne?id={id du film}`
+
 **GET** `/movies/search?title={titre du film}&genre={genre du film}&year={année de sortie}`
-> chaque paramètre de la route est indépendant
+
+> Chaque paramètre de la route est indépendant
 
 ### Routes privées (utilisateur)
 
