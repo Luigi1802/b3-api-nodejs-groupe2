@@ -6,6 +6,9 @@ import adminRouter from "./src/routes/adminRoutes.js";
 import userRouter from "./src/routes/userRoutes.js";
 import config from './config.json' assert {type: 'json'};
 import connectDB from "./mongoDbConnexion.js";
+import swaggerUi from "swagger-ui-express";
+
+
 
 const app = express();
 const portHost = config.HOST;
@@ -16,6 +19,7 @@ connectDB();
 app.use(cors());
 app.use(bodyParser.json());
 app.use(express.json());
+app.use('/swagger', swaggerUi.serve, swaggerUi.setup("./swagger.json"))
 
 // Routes publiques
 app.use(movieRouter);

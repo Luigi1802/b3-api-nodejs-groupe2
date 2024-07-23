@@ -6,9 +6,12 @@ import {userPatch,
     userPostWatchlist,
     userGetAllHistory,
     userPatchDeleteAccount} from "../controllers/userController.js";
+import userRegister from "../controllers/userRegister.js";
 import checkTokenValid from "../middlewares/validationToken.js";
 import userAuth from "../controllers/userAuth.js";
 const userRouter = express.Router();
+
+userRouter.post('/user/register',userRegister)
 
 userRouter.post('/user/login', userAuth)
 

@@ -1,0 +1,207 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "Movies API",
+    "description": "API for managing movies, including producers, directors, and actors."
+  },
+  "host": "localhost:3000",
+  "basePath": "/api",
+  "schemes": [
+    "http"
+  ],
+  "paths": {
+    "/movies": {
+      "get": {
+        "summary": "Get all movies",
+        "description": "Returns a list of all movies",
+        "responses": {
+          "200": {
+            "description": "A list of movies",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Movie"
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Add a new movie",
+        "description": "Creates a new movie",
+        "parameters": [
+          {
+            "name": "movie",
+            "in": "body",
+            "description": "Movie to add",
+            "schema": {
+              "$ref": "#/definitions/Movie"
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Movie created"
+          }
+        }
+      }
+    },
+    "/movies/{id}": {
+      "get": {
+        "summary": "Get a movie by ID",
+        "description": "Returns a single movie",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "ID of the movie to return"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "A single movie",
+            "schema": {
+              "$ref": "#/definitions/Movie"
+            }
+          },
+          "404": {
+            "description": "Movie not found"
+          }
+        }
+      },
+      "put": {
+        "summary": "Update a movie by ID",
+        "description": "Updates an existing movie",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "ID of the movie to update"
+          },
+          {
+            "name": "movie",
+            "in": "body",
+            "description": "Movie object to update",
+            "schema": {
+              "$ref": "#/definitions/Movie"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Movie updated"
+          },
+          "404": {
+            "description": "Movie not found"
+          }
+        }
+      },
+      "delete": {
+        "summary": "Delete a movie by ID",
+        "description": "Deletes an existing movie",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string",
+            "description": "ID of the movie to delete"
+          }
+        ],
+        "responses": {
+          "204": {
+            "description": "Movie deleted"
+          },
+          "404": {
+            "description": "Movie not found"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "Movie": {
+      "type": "object",
+      "required": ["title", "year", "duration", "rating", "producers", "directors", "actors", "genres"],
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "year": {
+          "type": "number"
+        },
+        "duration": {
+          "type": "number"
+        },
+        "rating": {
+          "type": "number"
+        },
+        "producers": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Producer"
+          }
+        },
+        "directors": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Director"
+          }
+        },
+        "actors": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Actor"
+          }
+        },
+        "genres": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "Producer": {
+      "type": "object",
+      "required": ["name", "surname"],
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "surname": {
+          "type": "string"
+        }
+      }
+    },
+    "Director": {
+      "type": "object",
+      "required": ["name", "surname"],
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "surname": {
+          "type": "string"
+        }
+      }
+    },
+    "Actor": {
+      "type": "object",
+      "required": ["name", "surname"],
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "surname": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}
