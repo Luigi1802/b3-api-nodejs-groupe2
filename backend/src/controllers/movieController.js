@@ -10,7 +10,7 @@ const movieGetOne = async (request, response, next)=>{
             return response.status(204).send(result);
         }
     }catch (err){
-        return response.status(500).send("Erreur serveur")
+        return response.status(500).send("Unexpected error, please contact an admnistrator.")
     }
 }
 
@@ -23,7 +23,7 @@ const movieGetAll = async (request, response, next)=>{
             return response.status(204).send(result);
         }
     }catch (err){
-        return response.status(500).send("Erreur serveur")
+        return response.status(500).send("Unexpected error, please contact an admnistrator.")
     }
 }
 
@@ -45,7 +45,7 @@ const movieSearch = async (request, response, next)=>{
             return response.status(204).send(result);
         }
     }catch (err){
-        return response.status(500).send("Erreur serveur")
+        return response.status(500).send("Unexpected error, please contact an admnistrator.")
     }
 }
 
