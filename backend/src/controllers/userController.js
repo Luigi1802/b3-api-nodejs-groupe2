@@ -31,13 +31,17 @@ const userPostFavorites = async (request, response, next) => {
         const movieId = request.body.id;
 
         if (!userId) {
-            return response.status(400).json({ message: 'User id is required.' });
+            return response.status(400).json({ message: 'User ID is required.' });
+        }
+
+        if (!movieId) {
+            return response.status(400).json({ message: 'Movie ID is required.' });
         }
 
         const movie = await Movie.findById(movieId);
-        /*if (!movie) {
+        if (!movie) {
             return response.status(404).json({ message: `Movie ${movieId} not found.` });
-        }*/
+        }
 
         const user = await User.findById(userId);
         if (!user) {
@@ -54,7 +58,7 @@ const userPostFavorites = async (request, response, next) => {
         return response.status(200).json(user.favorites);
     } catch (err) {
         if (err.name === 'CastError') {
-            return response.status(400).json({ message: 'Invalid user id or movie id format.' });
+            return response.status(400).json({ message: 'Invalid User id or Movie id format.' });
         }
         return response.status(500).json({ message: 'Unexpected error, please contact an administrator.' });
     }
