@@ -4,22 +4,32 @@
   },
   "email": "luigi@movies.fr",
   "password": "$2y$10$F5g0rP2g/X/a9QrKDyreIuCFL.Foxj1v/fqTg6XICvvK7Fqao04RG",
-  "name": "Luigi",
+  "name": "ph",
   "surname": "AUBRY-POUGET",
   "deleteRequest": 0,
   "favorites": [
-    "669825cf747acdcf345aad01",
-    "669825cf747acdcf345aad05"
+    {
+      "$oid": "669825cf747acdcf345aad01"
+    },
+    {
+      "$oid": "669825cf747acdcf345aad05"
+    }
   ],
   "watchlist": [
     {
-      "movieId": "669825cf747acdcf345aad05",
+      "movieId": {
+        "$oid": "669825cf747acdcf345aad05"
+      },
       "statusId": 2
     }
   ],
   "history": [
-    "669825cf747acdcf345aad01",
-    "669825cf747acdcf345aad05"
+    {
+      "$oid": "669825cf747acdcf345aad01"
+    },
+    {
+      "$oid": "669825cf747acdcf345aad05"
+    }
   ],
   "recommandations": []
 }]
