@@ -12,6 +12,11 @@ const userConnexion = async (request, response) => {
         /**Recuperation des données dans le body de la requete*/
         const email = request.body.email;
         const mots_de_passe = request.body.password;
+        
+        if (!email || !mots_de_passe) {
+            /**S'il manque un paramètre dans le body, renvoyer une erreur 400*/
+            return response.status(400).json({message: 'An email and a password are required to log in.'});
+        }
 
         /**Recherche le password utilisateur par l'email*/
         const result = await Admin.findOne({email:email});
@@ -21,7 +26,7 @@ const userConnexion = async (request, response) => {
         if (!result) {
 
             /**Si aucun résultat n'est trouvé, renvoyer une erreur 404*/
-            return response.status(404).json({message: 'Utilisateur introuvable'});
+            return response.status(404).json({message: `User with email ${email} not found.`});
         }
         const mots_de_pass_hash= result.password;
         /**Si les mots de passes correspondent alors on genere un token pour une session de 1 heure*/
@@ -34,12 +39,12 @@ const userConnexion = async (request, response) => {
         } else {
 
             /**Renvoyer une réponse  mauvaise requete*/
-            return response.status(400).json({message: 'Email ou mots de passe incorect'});
+            return response.status(400).json({message: 'Invalid credentials.'});
         }
     } catch (error) {
 
         /**Renvoyer une réponse d'echec*/
-        response.status(500).json({message: 'Erreur serveur'});
+        response.status(500).json({message: 'Unexpected error, please contact an admnistrator.'});
     }
 }
 export default userConnexion;

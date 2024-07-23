@@ -3,20 +3,33 @@ import bcrypt from "bcrypt";
 
 /**Post d'un utilisateur */
 const userPost = async (request, response) => {
+    const {email, name, surname, password} = request.body;
+
+    if (!email || !name || !surname || !password) {
+        /**S'il manque un paramètre dans le body, renvoyer une erreur 400*/
+        return response.status(400).json({message: 'An email, a name, a surname and a password are required to register.'});
+    }
+
+    const userExists = await User.findOne({email: email});
+
+    if (userExists) {
+        return response.status(409).json({message: 'A User with this email already exists.'});
+    }
+
     try {
-    const passwordHash = await  hashPassword(request.body.password);
-    const user =  new User({
-                email:request.body.email,
-                name:request.body.name,
-                surname:request.body.surname,
-                password:passwordHash})
+        const passwordHash = await hashPassword(password);
+        const user = new User({
+                email: email,
+                name: name,
+                surname: surname,
+                password: passwordHash})
         /**Sauvgarde de l'actes medical*/
         const result = await user.save();
         /**Renvoyer une réponse de succès*/
         return response.status(201).json(result);
     } catch (err) {
         /**Renvoyer une réponse  d'echec*/
-        return response.status(500).json({ message: 'Erreur serveur lors de la sauvegarde' , err});
+        return response.status(500).json({ message: 'Unexpected error, please contact an admnistrator.'});
     }
 };
 const hashPassword = async (password) =>{
@@ -28,7 +41,7 @@ const hashPassword = async (password) =>{
     } catch (err) {
 
         console.error(err.message);
-        throw new Error('Error hashing password');
+        throw new Error('Error while hashing password');
     }
 }
 export default userPost;
