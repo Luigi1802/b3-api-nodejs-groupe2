@@ -1,0 +1,59 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "REST API",
+    "description": ""
+  },
+  "host": "5002",
+  "basePath": "",
+  "tags": [
+    {
+      "name": "",
+      "description": ""
+    }
+  ],
+  "schemes": [],
+  "securityDefinitions": {},
+  "paths": {
+    "/movies/getOne/": {
+      "get": {
+        "description": "",
+        "parameters": [
+          {
+            "name": "title",
+            "in": "query",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "204": {
+            "description": "No Content"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/movies/getAll/": {
+      "get": {
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "OK"
+          },
+          "204": {
+            "description": "No Content"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    }
+  }
+}
