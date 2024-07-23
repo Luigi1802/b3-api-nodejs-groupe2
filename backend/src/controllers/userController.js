@@ -6,19 +6,23 @@ const userPatch = async (request, response, next) => {
     try {
         const userId = request.query.id;
 
+        // Vérification qu'un id est passé dans la requête
         if (!userId) {
             return response.status(400).json({ message: "User id is required." });
         }
 
         const userData = request.body;
 
+        // Ciblage de l'utilisateur à partir de l'id et mise a jour avec les données du body
         const updatedUser = await User.findByIdAndUpdate(userId, userData, { new: true });
         if (!updatedUser) {
+            // Si l'utilisateur n'est pas déjà présent en BDD, erreur 404
             response.status(404).json({ message: `User ${userId} not found.` });
         }
         return response.status(200).send(updatedUser);
     } catch (err) {
         if (err.name === "CastError") {
+            // Si les données de l'utilisateur entrées dans le body sont incorrectes, erreur 400
             return response.status(400).send(err.message);
         }
         return response.status(500).json({ message: "Unexpected error, please contact an admnistrator." });
@@ -30,26 +34,31 @@ const userPostFavorites = async (request, response, next) => {
         const userId = request.query.id;
         const movieId = request.body.id;
 
+        // Vérification qu'un id d'utilisateur est passé dans la requête
         if (!userId) {
-            return response.status(400).json({ message: 'User ID is required.' });
+            return response.status(400).json({ message: 'User id is required.' });
         }
 
+        // Vérification qu'un id de film est passé dans la requête
         if (!movieId) {
-            return response.status(400).json({ message: 'Movie ID is required.' });
+            return response.status(400).json({ message: 'Movie id is required.' });
         }
 
         const movie = await Movie.findById(movieId);
         if (!movie) {
+            // Si le film n'est pas déjà présent en BDD, erreur 404
             return response.status(404).json({ message: `Movie ${movieId} not found.` });
         }
 
         const user = await User.findById(userId);
         if (!user) {
+            // Si l'utilisateur n'est pas déjà présent en BDD, erreur 404
             return response.status(404).json({ message: `User ${userId} not found.` });
         }
 
         if (user.favorites.includes(movieId)) {
-            return response.status(400).json({ message: 'Movie is already in the favorites list.' });
+            // Si le film est déjà présent dans les favoris de l'utilisateur, erreur 409
+            return response.status(409).json({ message: 'Movie is already in the favorites list.' });
         }
 
         user.favorites.push(movieId);
@@ -58,6 +67,7 @@ const userPostFavorites = async (request, response, next) => {
         return response.status(200).json(user.favorites);
     } catch (err) {
         if (err.name === 'CastError') {
+            // Si les id entrés dans le body sont incorrects, erreur 400
             return response.status(400).json({ message: 'Invalid User id or Movie id format.' });
         }
         return response.status(500).json({ message: 'Unexpected error, please contact an administrator.' });
@@ -68,13 +78,19 @@ const userPostFavorites = async (request, response, next) => {
 const userGetAllFavorites = async (request, response, next) => {
     try {
         const userId = request.query.id;
+        // Vérification qu'un id d'utilisateur est passé dans la requête
+        if (!userId) {
+            return response.status(400).json({ message: 'User id is required.' });
+        }
         const user = await User.findById(userId).select('favorites');
         if (!user) {
+            // Si le film n'est pas déjà présent en BDD, erreur 404
             return response.status(404).json({ message: `User ${userId} not found.` });
         }
         return response.status(200).send(user.favorites);
     } catch (err) {
         if (err.name === "CastError") {
+            // Si l'id entré dans le body est incorrect, erreur 400
             return response.status(400).send(err.message);
         }
         return response.status(500).json({ message: "Unexpected error, please contact an administrator." });
@@ -86,23 +102,27 @@ const userDeleteFavorites = async (request, response, next) => {
     const userId = request.query.id;
     const movieId = request.body.id;
 
+    // Vérification qu'un id d'utilisateur est passé dans la requête
     if (!userId) {
         return response.status(400).json({ message: 'User id is required.' });
     }
 
     const movie = await Movie.findById(movieId);
     if (!movie) {
+        // Si le film n'est pas déjà présent en BDD, erreur 404
         return response.status(404).json({ message: `Movie ${movieId} not found.` });
     }
 
     try {
         const user = await User.findById(userId);
         if (!user) {
+            // Si l'utilisateur n'est pas déjà présent en BDD, erreur 404
             return response.status(404).json({ message: `User ${userId} not found.` });
         }
 
         const favoriteIndex = user.favorites.indexOf(movieId);
         if (favoriteIndex === -1) {
+            // Si le film n'est pas déjà en favori, erreur 404
             return response.status(404).json({ message: 'Movie not found in favorites list.' });
         }
 
@@ -112,7 +132,8 @@ const userDeleteFavorites = async (request, response, next) => {
         return response.status(200).json(user.favorites);
     } catch (err) {
         if (err.name === 'CastError') {
-            return response.status(400).json({ message: 'Invalid user id or movie id format.' });
+            // Si les id entrés dans le body sont incorrects, erreur 400
+            return response.status(400).json({ message: 'Invalid User id or Movie id format.' });
         }
         return response.status(500).json({ message: 'Unexpected error, please contact an administrator.' });
     }
@@ -124,30 +145,36 @@ const userPostWatchlist = async (request, response, next) => {
         const movieId = request.body.id;
         const statusId = request.body.statusId;
 
+        // Vérification qu'un id d'utilisateur est passé dans la requête
         if (!userId) {
             return response.status(400).json({ message: 'User id is required.' });
         }
 
+        // Vérification qu'un id de film est passé dans le body
         if (!movieId) {
             return response.status(400).json({ message: 'Movie id is required.' });
         }
 
+        // Vérification qu'un statut est passé dans le body
         if (statusId === undefined) {
             return response.status(400).json({ message: 'Status id is required.' });
         }
 
         const movie = await Movie.findById(movieId);
         if (!movie) {
+            // Si le film n'est pas déjà présent en BDD, erreur 404
             return response.status(404).json({ message: `Movie ${movieId} not found.` });
         }
 
         const user = await User.findById(userId);
         if (!user) {
+            // Si l'utilisateur' n'est pas déjà présent en BDD, erreur 404
             return response.status(404).json({ message: `User ${userId} not found.` });
         }
 
         const movieInWatchlist = user.watchlist.find(watchlistItem => watchlistItem.movieId.toString() === movieId);
         if (movieInWatchlist) {
+            // Si le film est pas déjà en liste de lecture, erreur 400
             return response.status(400).json({ message: 'Movie is already in the watchlist.' });
         }
 
@@ -157,6 +184,7 @@ const userPostWatchlist = async (request, response, next) => {
         return response.status(200).json(user.watchlist);
     } catch (err) {
         if (err.name === 'CastError') {
+            // Si les id entrés dans le body sont incorrects, erreur 400
             return response.status(400).json({ message: 'Invalid User id or Movie id format.' });
         }
         return response.status(500).json({ message: 'Unexpected error, please contact an administrator.' });
@@ -167,13 +195,19 @@ const userPostWatchlist = async (request, response, next) => {
 const userGetAllHistory = async (request, response, next) => {
     try {
         const userId = request.query.id;
+        // Vérification qu'un id d'utilisateur est passé dans la requête
+        if (!userId) {
+            return response.status(400).json({ message: 'User id is required.' });
+        }
         const user = await User.findById(userId).select('history');
         if (!user) {
+            // Si l'utilisateur' n'est pas déjà présent en BDD, erreur 404
             return response.status(404).json({ message: `User ${userId} not found.` });
         }
         return response.status(200).send(user.history);
     } catch (err) {
         if (err.name === "CastError") {
+            // Si l'id entré dans le body est incorrect, erreur 400
             return response.status(400).send(err.message);
         }
         return response.status(500).json({ message: "Unexpected error, please contact an administrator." });
@@ -184,6 +218,7 @@ const userGetAllHistory = async (request, response, next) => {
 const userPatchDeleteAccount = async (request, response, next) => {
     const userId = request.query.id;
 
+    // Vérification qu'un id d'utilisateur est passé dans la requête
     if (!userId) {
         return response.status(400).json({ message: 'User id is required.' });
     }
@@ -192,12 +227,14 @@ const userPatchDeleteAccount = async (request, response, next) => {
         const user = await User.findByIdAndUpdate(userId, { deleteRequest: true }, { new: true });
 
         if (!user) {
+            // Si l'utilisateur' n'est pas déjà présent en BDD, erreur 404
             return response.status(404).json({ message: `User ${userId} not found.` });
         }
 
         return response.status(200).json(user);
     } catch (err) {
         if (err.name === 'CastError') {
+            // Si l'id entré dans le body est incorrect, erreur 400
             return response.status(400).json({ message: 'Invalid user id format.' });
         }
         return response.status(500).json({ message: 'Unexpected error, please contact an administrator.' });
