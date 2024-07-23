@@ -10,7 +10,7 @@ const movieGetOne = async (request, response, next)=>{
             return response.status(204).send(result);
         }
     }catch (err){
-        return response.status(500).send("Unexpected error, please contact an admnistrator.")
+        return response.status(500).send("Erreur serveur")
     }
 }
 
@@ -23,15 +23,13 @@ const movieGetAll = async (request, response, next)=>{
             return response.status(204).send(result);
         }
     }catch (err){
-        return response.status(500).send("Unexpected error, please contact an admnistrator.")
+        return response.status(500).send("Erreur serveur")
     }
 }
 
 const movieSearch = async (request, response, next)=>{
     try {
-        const title = request.query.title;
-        const year = request.query.year;
-        const genre = request.query.genre;
+        const {title, year, genre} = request.query;
         
         let searchObject = {};
         if (title) {searchObject.title = {$regex: new RegExp(title), $options: 'i'}}
@@ -45,7 +43,7 @@ const movieSearch = async (request, response, next)=>{
             return response.status(204).send(result);
         }
     }catch (err){
-        return response.status(500).send("Unexpected error, please contact an admnistrator.")
+        return response.status(500).send("Erreur serveur")
     }
 }
 
