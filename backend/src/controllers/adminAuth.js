@@ -3,10 +3,11 @@ import pkg from 'jsonwebtoken';
 const {sign} = pkg;
 import dotenv from 'dotenv';
 import Admin from "../models/adminModel.js";
+import {request, response} from "express";
 dotenv.config();
 
 /**Connexion de l'utilisateur*/
-const userConnexion = async (request, response) => {
+const adminConnexion = async (request, response) => {
 
     try {
         /**Recuperation des données dans le body de la requete*/
@@ -47,4 +48,18 @@ const userConnexion = async (request, response) => {
         response.status(500).json({message: 'Unexpected error, please contact an admnistrator.'});
     }
 }
-export default userConnexion;
+
+const adminExist = async (email,response)=>{
+    try {
+        const result = await Admin.findOne({email:email});
+        if (result==null) {
+            return false;
+        }else{
+            return true;
+        }
+    }catch {
+        /**Renvoyer une réponse d'echec*/
+        response.status(500).json({message: 'Erreur serveur'});
+    }
+}
+export {adminConnexion,adminExist};
