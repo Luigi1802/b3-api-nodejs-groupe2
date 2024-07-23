@@ -25,10 +25,29 @@ const movieGetOne = async (request, response, next)=>{
 
 // Récupération de tous les films en BDD
 const movieGetAll = async (request, response, next)=>{
+    // Récupération des paramètres de pagination
+    const page = parseInt(request.query.page) || 1;
+    const limit = parseInt(request.query.limit) || 10;
+
+    // Calcul de l'offset
+    const skip = (page - 1) * limit;
+    
     try {
-        const result = await Movie.find({});
+        // Récupération des films de la page demandée
+        const result = await Movie.find({}).skip(skip).limit(limit);
+
+        // Récupération du nombre total de films en BDD
+        const totalMovies = await Movie.countDocuments();
+        
         if (result.length > 0) {
-            return response.status(200).send(result);
+            // Envoi des films avec des informations sur les données paginées
+            return response.status(200).json({
+                page: page,
+                nbMovies: limit,
+                totalPages: Math.ceil(totalMovies / limit),
+                totalMovies: totalMovies,
+                movies: result
+            });
         } else {
             // Si aucun film n'est présent, erreur 204
             return response.status(204).send(result);
