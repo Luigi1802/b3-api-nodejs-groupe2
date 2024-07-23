@@ -1,7 +1,8 @@
 import express from "express";
 import bodyParser from "body-parser";
 import cors from "cors";
-import router from "./src/routes/movieRoutes.js";
+import movieRouter from "./src/routes/movieRoutes.js";
+import adminRouter from "./src/routes/adminRoutes.js";
 import userRouter from "./src/routes/userRoutes.js";
 import config from './config.json' assert {type: 'json'};
 import connectDB from "./mongoDbConnexion.js";
@@ -17,7 +18,8 @@ app.use(bodyParser.json());
 app.use(express.json());
 
 //Routes
-app.use(router);
+app.use(movieRouter);
+app.use(adminRouter);
 app.use(userRouter);
 
 app.post('/', (request, response) => {
