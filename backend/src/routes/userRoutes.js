@@ -8,7 +8,10 @@ import {userPatch,
     userPatchDeleteAccount} from "../controllers/userController.js";
 import checkTokenValid from "../middleWares/validationToken.js";
 import userAut from "../controllers/userAut.js";
+import userRegister from "../controllers/userRegister.js";
 const userRouter = express.Router();
+
+userRouter.post('/user/register',userRegister)
 
 userRouter.post('/user/login', userAut)
 
