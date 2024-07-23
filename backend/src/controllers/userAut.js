@@ -1,9 +1,8 @@
-const connectDB = require('../../mongoDbConnexion.js');
-const mongoose = require('mongoose');
-import bcrypt from "bcryptjs";
-import {sign} from "jsonwebtoken";
+import bcrypt from "bcrypt";
+import pkg from 'jsonwebtoken';
+const {sign} = pkg;
 import dotenv from 'dotenv';
-import {PersonnelMedical} from "../models/personnelMedical_model";
+import User from "../models/userModel.js";
 dotenv.config();
 
 /**Connexion de l'utilisateur*/
@@ -12,7 +11,7 @@ const userConnexion = async (request, response) => {
     try {
         /**Recuperation des données dans le body de la requete*/
         const email = request.body.email;
-        const mots_de_passe = request.body.mots_de_passe;
+        const mots_de_passe = request.body.password;
 
         /**Recherche le password utilisateur par l'email*/
         const result = await User.findOne({email:email});
@@ -24,11 +23,11 @@ const userConnexion = async (request, response) => {
             /**Si aucun résultat n'est trouvé, renvoyer une erreur 404*/
             return response.status(404).json({message: 'Utilisateur introuvable'});
         }
-        const mots_de_pass_hash= result.mots_de_passe;
-
+        const mots_de_pass_hash= result.password;
         /**Si les mots de passes correspondent alors on genere un token pour une session de 1 heure*/
-        if (await bcrypt.compare(mots_de_passe, mots_de_pass_hash)) {
-            const expiration = Math.floor(Date.now() / 1000) + (60 * 60);
+        const match = await bcrypt.compare(mots_de_passe,mots_de_pass_hash)
+        if (match) {
+            const expiration = Math.floor(Date.now() / 1000) + (60 * 60 * 5);
             const payload = {user_id: email, exp: expiration};
             const token = sign(payload, process.env.SECRET_KEY);
             return response.status(201).json({token});

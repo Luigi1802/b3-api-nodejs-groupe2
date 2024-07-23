@@ -22,6 +22,6 @@ const AdminSchema = new Schema({
 }, { _id: false });
 
 
-const Movie = mongoose.model('Movie', MovieSchema,'Movie');
+const Admin = mongoose.model('Admin', AdminSchema,'Admin');
 
-export default Movie;
+export default Admin;

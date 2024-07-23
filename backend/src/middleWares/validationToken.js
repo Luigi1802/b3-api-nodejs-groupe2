@@ -1,4 +1,4 @@
-import {sign, verify} from "jsonwebtoken";
+import jwt from "jsonwebtoken";
 import dotenv from 'dotenv';
 dotenv.config();
 
@@ -19,12 +19,12 @@ const extractToken = (authorization) => {
 /** Verification du token*/
 const checkTokenValid = (request, response, next) => {
     const token = request.headers.authorization && extractToken(request.headers.authorization)
-
+console.log("token")
     if (!token) {
         return response.status(401).json({message: 'token non valide ou absent!'})
     }
     /**On verifie le token*/
-    verify(token, process.env.SECRET_KEY, (err, decodedToken) => {
+    jwt.verify(token, process.env.SECRET_KEY, (err, decodedToken) => {
         if (err) {
             return response.status(401).json({message: 'Bad token'})
         }
@@ -32,4 +32,4 @@ const checkTokenValid = (request, response, next) => {
     })
 
 }
-export {checkTokenValid};
+export default checkTokenValid;
