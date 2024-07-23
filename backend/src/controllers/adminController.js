@@ -64,6 +64,10 @@ const movieDelete = async (request, response, next)=>{
         }
         return response.status(200).send(deletedMovie);
     }catch (err){
+        if (err.name === 'CastError') {
+            // Si l'id entré est incorrect, erreur 400
+            return response.status(400).json({ message: 'Invalid Movie id format.' });
+        }
         return response.status(500).json({message:"Unexpected error, please contact an admnistrator."})
     }
 }
@@ -86,6 +90,10 @@ const userGetOne = async (request, response, next)=>{
             return response.status(404).send(result);
         }
     }catch (err){
+        if (err.name === 'CastError') {
+            // Si l'id entré est incorrect, erreur 400
+            return response.status(400).json({ message: 'Invalid User id format.' });
+        }
         return response.status(500).json({message:"Unexpected error, please contact an admnistrator."})
     }
 }
