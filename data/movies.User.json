@@ -1,11 +1,12 @@
 [{
   "_id": {
-    "$oid": "669f53f35905df6054376b40"
+    "$oid": "669f5b6a5905df6054376b4c"
   },
   "email": "luigi@movies.fr",
   "password": "$2y$10$F5g0rP2g/X/a9QrKDyreIuCFL.Foxj1v/fqTg6XICvvK7Fqao04RG",
   "name": "Luigi",
   "surname": "AUBRY-POUGET",
+  "deleteRequest": 0,
   "favorites": [
     "669825cf747acdcf345aad01",
     "669825cf747acdcf345aad05"
