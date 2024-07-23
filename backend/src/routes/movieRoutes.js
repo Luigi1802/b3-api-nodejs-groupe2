@@ -3,6 +3,7 @@ import {movieGetOne, movieGetAll, movieSearch} from "../controllers/movieControl
 
 const router = express.Router();
 
+// Routes d'accès public aux films
 router.get('/movies/getOne/', movieGetOne);
 router.get('/movies/getAll/', movieGetAll);
 router.get('/movies/search/', movieSearch);
