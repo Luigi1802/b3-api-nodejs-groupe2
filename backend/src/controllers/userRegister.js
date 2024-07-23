@@ -1,7 +1,7 @@
 import User from "../models/userModel.js";
 import bcrypt from "bcrypt";
 
-/**Post d'un utilisateur*/
+/**Post d'un utilisateur */
 const userPost = async (request, response) => {
     try {
     const passwordHash = await  hashPassword(request.body.password);
