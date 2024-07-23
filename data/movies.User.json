@@ -1,0 +1,24 @@
+[{
+  "_id": {
+    "$oid": "669f53f35905df6054376b40"
+  },
+  "email": "luigi@movies.fr",
+  "password": "$2y$10$F5g0rP2g/X/a9QrKDyreIuCFL.Foxj1v/fqTg6XICvvK7Fqao04RG",
+  "name": "Luigi",
+  "surname": "AUBRY-POUGET",
+  "favorites": [
+    "669825cf747acdcf345aad01",
+    "669825cf747acdcf345aad05"
+  ],
+  "watchlist": [
+    {
+      "movieId": "669825cf747acdcf345aad05",
+      "statusId": 2
+    }
+  ],
+  "history": [
+    "669825cf747acdcf345aad01",
+    "669825cf747acdcf345aad05"
+  ],
+  "recommandations": []
+}]
