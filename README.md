@@ -7,7 +7,7 @@
 
 **POST** `/user/login/`
 
-**POST** `/admiin/login/`
+**POST** `/admin/login/`
 
 **GET** `/movies/getAll/`
 
