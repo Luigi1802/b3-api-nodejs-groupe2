@@ -3,9 +3,11 @@
 ## Routes
 ### Routes publiques
 
-**POST** `/register/`
+**POST** `/user/register/`
 
-**POST** `/login/`
+**POST** `/user/login/`
+
+**POST** `/admiin/login/`
 
 **GET** `/movies/getAll/`
 

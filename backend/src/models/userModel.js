@@ -2,20 +2,11 @@ import mongoose from 'mongoose';
 
 const { Schema } = mongoose;
 
-const WatchlistSchema = new Schema({
-    idFilm: {
-        type: String
-    },
-    status: {
-        type: Number,
-        required: true
-    }
-})
-
 const UserSchema = new Schema({
     email: {
         type: String,
-        required: true
+        required: true,
+        unique: true
     },
     password: {
         type: String,
@@ -31,12 +22,38 @@ const UserSchema = new Schema({
     },
     deleteRequest: {
         type: Number,
-        required: true
+        default: 0,
     },
-    favorites: [{idFilm: {type: String}}],
-    watchlist: [WatchlistSchema],
-    history: [{idFilm: {type: String}}],
-    recommandations: [{idFilm: {type: String}}]
+    favorites: [
+        {
+            type: Schema.Types.ObjectId,
+            ref: 'Movie'
+        }
+    ],
+    watchlist: [
+        {
+            movieId: {
+                type: Schema.Types.ObjectId,
+                ref: 'Movie'
+            },
+            statusId: {
+                type: Number,
+                required: true
+            }
+        }
+    ],
+    history: [
+        {
+            type: Schema.Types.ObjectId,
+            ref: 'Movie'
+        }
+    ],
+    recommandations: [
+        {
+            type: Schema.Types.ObjectId,
+            ref: 'Movie'
+        }
+    ]
 });
 
 const User = mongoose.model('User', UserSchema, 'User');
