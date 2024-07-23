@@ -1,16 +1,6 @@
 import express from "express";
-<<<<<<< HEAD
 import {userPatch, userPostFavorites, userGetAllFavorites, userDeleteFavorites, userPostWatchlist, userGetAllHistory, userPatchDeleteAccount} from "../controllers/userController.js";
-=======
-import {userPatch,
-    userPostFavorites,
-    userGetAllFavorites,
-    userDeleteFavorites,
-    userPostWatchlist,
-    userGetAllHistory,
-    userPatchDeleteAccount} from "../controllers/userController.js";
 import userRegister from "../controllers/userRegister.js";
->>>>>>> c9e20582c78d45868b5bbedb67e4bff24e5f3838
 import checkTokenValid from "../middlewares/validationToken.js";
 import userAuth from "../controllers/userAuth.js";
 const userRouter = express.Router();
