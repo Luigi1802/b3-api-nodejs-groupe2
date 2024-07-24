@@ -22,7 +22,7 @@ La base se compose de trois collections:
 - **User** les utilisateurs (identifiants et vidéothèque)
 - **Admin** les administrateurs (identifiants)
 
-Les fichiers dump des collections sont dans le répertoire `data` à la racine du projet. Dans une connexion MongoDB de votre choix (ex `mongodb://localhost:27017/`), créez une base de données `movies`. Dans cette base de données, créez les collections **Movie**, **User** et **Admin** et importez les données grâce aux dump du répertoire `data`:
+Les fichiers dump des collections sont dans le répertoire `data` à la racine du projet. Dans une connexion MongoDB de votre choix (ex `mongodb://localhost:27017/`), créez une base de données `movies`. Dans cette base de données, créez les collections **Movie**, **User** et **Admin** et importez les données grâce aux dumps du répertoire `data`:
 - `movies.Admin.json`
 - `movies.Movie.json`
 - `movies.User.json`
@@ -31,15 +31,17 @@ Mettez l'URL de votre conexion MongoDB dans le champ `MONGODB_URL` de votre fich
 
 ### 2.3 Commande de lancement
 
-Une fois votre base de données en place et votre fichier `config.json` paramétré, ouvrez le terminal de votre choix à l'emplacement du dépôt local (précédement cloné). Déplacez vous dans le fichier `backend` avec la commande `cd backend/`. Faites une installation avec la commande `npm install`. 
+Une fois votre base de données en place et votre fichier `config.json` paramétré, ouvrez le terminal de votre choix à l'emplacement du dépôt local (précédement cloné). Déplacez vous dans le répertoire `backend` avec la commande `cd backend/`. Faites une installation des dépendances requises avec la commande `npm install`. 
 
-Pour lancer l'API, éxecutez la commande `npm run start`. En cas de succès, l'API tourne sur le port renseigné dans votre fichier `config`.
+Pour lancer l'API, exécutez la commande `npm run start`. En cas de succès, l'API tourne sur le port renseigné dans votre fichier `config.json`.
 
 ## 3 Route de l'API
 
-L'API se compose de trois catégorie de route:
+L'API se compose de trois catégories de route:
 - Les routes publiques pour consulter la liste des films, consulter un film en détail, s'enregistrer/se connecter pour un utilisateur, se connecter pour un administrateur
-- Les routes privés utilisateur, soit l'espace pesonnel pour un utilisateur connecté (favoris, infos utilisateur, liste de lecture, historique)
-- Les routes privés administrateur, soit l'espace de l'administrateur (ajout, modification, suppression de films, administration des utilisateurs)
+- Les routes privées utilisateur, soit l'espace personnel pour un utilisateur connecté (favoris, infos utilisateur, liste de lecture, historique)
+- Les routes privées administrateur, soit l'espace de l'administrateur (ajout, modification, suppression de films, administration des utilisateurs)
 
-Swagger est mis en place pour le détail des routes et le format de données attendu.
+Swagger est mis en place pour le détail des routes et le format de données attendu. Un token adapté doit être fourni pour les routes privées.
+
+La documentation swagger est accessible sur la route `/swagger`. 
