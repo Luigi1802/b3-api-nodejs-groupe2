@@ -5,10 +5,13 @@ import checkTokenValid from "../middlewares/validationToken.js";
 import userConnexion from "../controllers/userAuth.js";
 const userRouter = express.Router();
 
-userRouter.post('/user/register',userRegister)
-
-userRouter.post('/user/login', userConnexion)
-
+// Route d'inscription en tant qu'utilisateur
+// (publique)
+userRouter.post('/user/register',userRegister);
+// Route d'authentification en tant qu'utilisateur
+// (publique)
+userRouter.post('/user/login', userConnexion);
+// Routes des actions utilisateur
 userRouter.patch('/user/', checkTokenValid, userPatch);
 userRouter.post('/user/favorites/', checkTokenValid, userPostFavorites);
 userRouter.get('/user/favorites/', checkTokenValid, userGetAllFavorites);
