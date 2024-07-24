@@ -7,7 +7,7 @@ import userRouter from "./src/routes/userRoutes.js";
 import config from './config.json' assert {type: 'json'};
 import connectDB from "./mongoDbConnexion.js";
 import swaggerUi from "swagger-ui-express";
-
+import swaggerDoc from './swagger.json' assert {type: 'json'};
 
 
 const app = express();
@@ -16,10 +16,11 @@ const portHost = config.HOST;
 // Connexion MongoDB
 connectDB();
 
+
 app.use(cors());
 app.use(bodyParser.json());
 app.use(express.json());
-app.use('/swagger', swaggerUi.serve, swaggerUi.setup("./swagger.json"))
+app.use('/swagger', swaggerUi.serve, swaggerUi.setup(swaggerDoc))
 
 // Routes publiques
 app.use(movieRouter);
@@ -32,6 +33,7 @@ app.use(userRouter);
 app.get('/', (request, response) => {
     response.send('I love movies');
 });
+
 
 // Démarrage du serveur
 app.listen(portHost, () => {

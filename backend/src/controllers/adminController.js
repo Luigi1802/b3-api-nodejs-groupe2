@@ -4,6 +4,7 @@ import User from "../models/userModel.js";
 
 // Ajout d'un film à la BDD
 const movieAdd = async (request, response, next)=>{
+    // #swagger.tags = ['Admin']
     try {
         // Création et insertion d'un Movie à partie des données du body
         const newMovie = new Movie({...request.body});
@@ -20,6 +21,7 @@ const movieAdd = async (request, response, next)=>{
 
 // Mise a jour d'un film en BDD
 const movieUpdate = async (request, response, next)=>{
+    // #swagger.tags = ['Admin']
     const movieId = request.query.id; 
     const movieData = request.body;
 
@@ -48,6 +50,7 @@ const movieUpdate = async (request, response, next)=>{
 
 // Suppression d'un film en BDD
 const movieDelete = async (request, response, next)=>{
+    // #swagger.tags = ['Admin']
     const movieId = request.query.id; 
 
     // Vérification qu'un id est passé dans la requête
@@ -70,6 +73,7 @@ const movieDelete = async (request, response, next)=>{
 
 // Récupération d'un utilisateur par son id
 const userGetOne = async (request, response, next)=>{
+    // #swagger.tags = ['Admin']
     const userId = request.query.id;
 
     // Vérification qu'un id est passé dans la requête
@@ -92,6 +96,7 @@ const userGetOne = async (request, response, next)=>{
 
 // Récupération de tous les utilisateurs en BDD
 const userGetAll = async (request, response, next)=>{
+    // #swagger.tags = ['Admin']
     try {
         const result = await User.find({});
         if (result.length > 0) {

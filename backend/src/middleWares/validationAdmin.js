@@ -18,6 +18,7 @@ const extractToken = (authorization) => {
 }
 /** Verification du token*/
 const checkAdmin = async  (request, response, next) => {
+
     const token = request.headers.authorization && extractToken(request.headers.authorization);
     if (!token) {
         return response.status(401).json({message: 'Invalid token.'})

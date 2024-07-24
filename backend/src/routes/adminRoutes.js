@@ -3,8 +3,11 @@ import {adminConnexion} from "../controllers/adminAuth.js";
 import {movieAdd, movieUpdate, movieDelete, userGetAll, userGetOne} from "../controllers/adminController.js";
 import checkTokenValid from "../middlewares/validationToken.js";
 import checkAdmin from "../middleWares/validationAdmin.js";
+import swaggerUi from "swagger-ui-express";
 
 const router = express.Router();
+
+
 
 // Route d'authentification en tant qu'admin
 // (publique)
