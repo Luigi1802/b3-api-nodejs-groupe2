@@ -3,6 +3,7 @@ import Movie from "../models/movieModel.js";
 
 // Modification des données de l'utilisateur
 const userPatch = async (request, response, next) => {
+    // #swagger.tags = ['User']
     try {
         const userId = request.query.id;
 
@@ -30,6 +31,7 @@ const userPatch = async (request, response, next) => {
 }
 
 const userPostFavorites = async (request, response, next) => {
+    // #swagger.tags = ['User']
     try {
         const userId = request.query.id;
         const movieId = request.body.id;
@@ -76,6 +78,7 @@ const userPostFavorites = async (request, response, next) => {
 
 // Récupération des favoris de l'utilisateur
 const userGetAllFavorites = async (request, response, next) => {
+    // #swagger.tags = ['User']
     try {
         const userId = request.query.id;
         // Vérification qu'un id d'utilisateur est passé dans la requête
@@ -99,6 +102,7 @@ const userGetAllFavorites = async (request, response, next) => {
 
 // Supprimer un film de la liste de favoris d'un utilisateur
 const userDeleteFavorites = async (request, response, next) => {
+    // #swagger.tags = ['User']
     const userId = request.query.id;
     const movieId = request.body.id;
 
@@ -140,6 +144,7 @@ const userDeleteFavorites = async (request, response, next) => {
 }
 
 const userPostWatchlist = async (request, response, next) => {
+    // #swagger.tags = ['User']
     try {
         const userId = request.query.id;
         const movieId = request.body.id;
@@ -193,6 +198,7 @@ const userPostWatchlist = async (request, response, next) => {
 
 // Récupération de l'historique de l'utilisateur
 const userGetAllHistory = async (request, response, next) => {
+    // #swagger.tags = ['User']
     try {
         const userId = request.query.id;
         // Vérification qu'un id d'utilisateur est passé dans la requête
@@ -216,6 +222,7 @@ const userGetAllHistory = async (request, response, next) => {
 
 // Modification du champ de demande de suppression de compte
 const userPatchDeleteAccount = async (request, response, next) => {
+    // #swagger.tags = ['User']
     const userId = request.query.id;
 
     // Vérification qu'un id d'utilisateur est passé dans la requête

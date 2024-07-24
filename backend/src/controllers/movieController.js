@@ -3,6 +3,7 @@ import Movie from "../models/movieModel.js";
 
 // Récupération d'un film par son id
 const movieGetOne = async (request, response, next)=>{
+    // #swagger.tags = ['Publique']
     const movieId = request.query.id;
 
     // Vérification qu'un id est passé dans la requête
@@ -29,6 +30,7 @@ const movieGetOne = async (request, response, next)=>{
 
 // Récupération de tous les films en BDD
 const movieGetAll = async (request, response, next)=>{
+    // #swagger.tags = ['Publique']
     // Récupération des paramètres de pagination
     const page = parseInt(request.query.page) || 1;
     const limit = parseInt(request.query.limit) || 10;
@@ -63,6 +65,7 @@ const movieGetAll = async (request, response, next)=>{
 
 // Recherche d'un film à partir d'un titre, d'une année de sortie et/ou d'un genre
 const movieSearch = async (request, response, next)=>{
+    // #swagger.tags = ['Publique']
     const {title, year, genre} = request.query;
 
     // Si aucun des paramètres de recherche n'est donné, erreur 400

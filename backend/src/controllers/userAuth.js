@@ -7,7 +7,7 @@ dotenv.config();
 
 /**Connexion de l'utilisateur*/
 const userConnexion = async (request, response) => {
-
+    // #swagger.tags = ['Publique']
     try {
         /**Recuperation des données dans le body de la requete*/
         const email = request.body.email;
@@ -45,4 +45,4 @@ const userConnexion = async (request, response) => {
         response.status(500).json({message: 'Unexpected error, please contact an admnistrator.'});
     }
 }
-export default userConnexion;
+export {userConnexion};

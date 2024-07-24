@@ -1,8 +1,8 @@
 import express from "express";
 import {userPatch, userPostFavorites, userGetAllFavorites, userDeleteFavorites, userPostWatchlist, userGetAllHistory, userPatchDeleteAccount} from "../controllers/userController.js";
-import userRegister from "../controllers/userRegister.js";
+import {userRegister} from "../controllers/userRegister.js";
 import checkTokenValid from "../middlewares/validationToken.js";
-import userConnexion from "../controllers/userAuth.js";
+import {userConnexion} from "../controllers/userAuth.js";
 const userRouter = express.Router();
 
 // Route d'inscription en tant qu'utilisateur

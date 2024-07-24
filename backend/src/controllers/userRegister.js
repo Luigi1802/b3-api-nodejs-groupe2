@@ -2,7 +2,8 @@ import User from "../models/userModel.js";
 import bcrypt from "bcrypt";
 
 /**Post d'un utilisateur */
-const userPost = async (request, response) => {
+const userRegister = async (request, response) => {
+    // #swagger.tags = ['Publique']
     const {email, name, surname, password} = request.body;
 
     if (!email || !name || !surname || !password) {
@@ -23,7 +24,6 @@ const userPost = async (request, response) => {
                 name: name,
                 surname: surname,
                 password: passwordHash})
-        /**Sauvgarde de l'actes medical*/
         const result = await user.save();
         /**Renvoyer une réponse de succès*/
         return response.status(201).json(result);
@@ -44,4 +44,4 @@ const hashPassword = async (password) =>{
         throw new Error('Error while hashing password');
     }
 }
-export default userPost;
+export {userRegister};

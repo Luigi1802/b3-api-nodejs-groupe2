@@ -34,7 +34,6 @@ app.get('/', (request, response) => {
     response.send('I love movies');
 });
 
-
 // Démarrage du serveur
 app.listen(portHost, () => {
     console.log(`Server is running on port ${portHost}`);

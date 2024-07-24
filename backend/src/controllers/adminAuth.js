@@ -8,7 +8,7 @@ dotenv.config();
 
 /**Connexion de l'utilisateur*/
 const adminConnexion = async (request, response) => {
-
+    // #swagger.tags = ['Publique']
     try {
         /**Recuperation des données dans le body de la requete*/
         const email = request.body.email;
